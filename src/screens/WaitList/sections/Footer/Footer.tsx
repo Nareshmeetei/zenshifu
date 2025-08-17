@@ -4,8 +4,6 @@ import { Input } from "../../../../components/ui/input";
 import { Toast } from "../../../../components/ui/toast";
 import { useWaitlistSignup } from "../../../../hooks/useWaitlistSignup";
 
-// Test auto-deploy connection
-
 export const Footer = (): JSX.Element => {
   const [email, setEmail] = useState('');
   const { signupForWaitlist, isLoading, message, clearMessage } = useWaitlistSignup();

@@ -93,18 +93,18 @@ export const HeroSection = (): JSX.Element => {
       </div>
       
       <div className="relative w-full min-h-[800px] md:min-h-[1662px]">
-        {/* Background image with floating animation - expanded to cover full width */}
+        {/* Background image with floating animation - 3D Zen Bolt at 40% opacity */}
         <img
-          className="absolute w-full h-[600px] md:h-[950px] top-0 left-0 object-cover transition-opacity duration-1000 ease-out animate-float-gentle"
-          alt="Vector Background"
-          src="/vector-hero.svg"
+          className="absolute w-full h-[600px] md:h-[950px] top-0 left-0 object-cover transition-opacity duration-1000 ease-out animate-float-gentle opacity-40"
+          alt="3D Zen Bolt Background"
+          src="/3d-zen-bolt.png"
         />
 
-        {/* Colorful gradient blurs with animation */}
-        <div className="absolute w-48 md:w-72 h-48 md:h-72 top-[200px] md:top-[368px] right-[25px] md:right-[50px] bg-[#1af3f2cc] rounded-[72px] md:rounded-[144px] blur-[100px] md:blur-[200px] animate-pulse" />
-        <div className="absolute w-[120px] md:w-[220px] h-[120px] md:h-[220px] top-[-80px] md:top-[-156px] right-[100px] md:right-[200px] bg-[#eba7d2] rounded-[60px] md:rounded-[110px] blur-[65px] md:blur-[125px] animate-pulse" />
-        <div className="absolute w-[150px] md:w-[290px] h-[150px] md:h-[290px] top-[100px] md:top-[200px] left-[-80px] md:left-[-166px] bg-[#fa7d54cc] rounded-[75px] md:rounded-[145px] blur-[100px] md:blur-[200px] animate-pulse" />
-        <div className="absolute w-[100px] md:w-[190px] h-[100px] md:h-[190px] top-[250px] md:top-[490px] left-[-20px] md:left-[-44px] bg-[#45f946] rounded-[50px] md:rounded-[95px] blur-[75px] md:blur-[150px] animate-pulse" />
+        {/* Colorful gradient blurs with animation - set to 75% opacity */}
+        <div className="absolute w-48 md:w-72 h-48 md:h-72 top-[200px] md:top-[368px] right-[25px] md:right-[50px] bg-[#1af3f2bf] rounded-[72px] md:rounded-[144px] blur-[100px] md:blur-[200px] animate-pulse" />
+        <div className="absolute w-[120px] md:w-[220px] h-[120px] md:h-[220px] top-[-80px] md:top-[-156px] right-[100px] md:right-[200px] bg-[#eba7d2bf] rounded-[60px] md:rounded-[110px] blur-[65px] md:blur-[125px] animate-pulse" />
+        <div className="absolute w-[150px] md:w-[290px] h-[150px] md:h-[290px] top-[100px] md:top-[200px] left-[-80px] md:left-[-166px] bg-[#fa7d54bf] rounded-[75px] md:rounded-[145px] blur-[100px] md:blur-[200px] animate-pulse" />
+        <div className="absolute w-[100px] md:w-[190px] h-[100px] md:h-[190px] top-[250px] md:top-[490px] left-[-20px] md:left-[-44px] bg-[#45f946bf] rounded-[50px] md:rounded-[95px] blur-[75px] md:blur-[150px] animate-pulse" />
 
         {/* Static Navigation bar */}
         <div className="relative w-full py-4 md:py-6 z-10 transform transition-all duration-700 ease-out translate-y-0 opacity-100">
