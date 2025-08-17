@@ -41,16 +41,15 @@ export const HeroSection = (): JSX.Element => {
     <section className="relative w-full bg-[#e7eefe] overflow-hidden">
       {message && <Toast message={message} onClose={clearMessage} />}
       
-      {/* Floating Navigation Bar - Decreased width by 15% */}
-      <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 ease-out ${
+      {/* Floating Navigation Bar - Mobile responsive */}
+      <div className={`fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-500 ease-out w-[calc(100%-2rem)] max-w-none md:max-w-[935px] ${
         isScrolled ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
       }`}>
-        {/* Decreased width by 15% (from 845px to 718px mobile, from 1100px to 935px desktop) */}
-        <div className="bg-white/50 backdrop-blur-md rounded-[100px] border border-white/20 shadow-lg/80 px-8 py-4 min-w-[718px] md:min-w-[935px]">
-          <div className="flex items-center justify-between gap-10">
-            {/* Logo made 20% bigger (from 120px to 144px) */}
+        <div className="bg-white/50 backdrop-blur-md rounded-[50px] md:rounded-[100px] border border-white/20 shadow-lg/80 px-4 md:px-8 py-3 md:py-4 w-full">
+          <div className="flex items-center justify-between gap-2 md:gap-10">
+            {/* Logo - smaller on mobile */}
             <img
-              className="w-[144px] h-auto transition-all duration-300 ease-out hover:opacity-80 hover:-translate-y-0.5 cursor-pointer"
+              className="w-[100px] md:w-[144px] h-auto transition-all duration-300 ease-out hover:opacity-80 hover:-translate-y-0.5 cursor-pointer"
               alt="ZenShifu Logo"
               src="/zenshifu-logo.svg"
               onClick={() => scrollToSection('#hero')}
@@ -71,9 +70,10 @@ export const HeroSection = (): JSX.Element => {
             <Button
               variant="outline"
               onClick={() => scrollToSection('#pricing')}
-              className="rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-6 py-2.75 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-sm whitespace-nowrap"
+              className="rounded-[50px] md:rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-3 md:px-6 py-2 md:py-2.75 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-xs md:text-sm whitespace-nowrap"
             >
-              Join Waitlist
+              <span className="hidden sm:inline">Join Waitlist</span>
+              <span className="sm:hidden">Join</span>
             </Button>
           </div>
         </div>

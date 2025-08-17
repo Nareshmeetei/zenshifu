@@ -1,0 +1,42 @@
+redirectsOrigin = "config"
+plugins = []
+headers = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "D:\\PROJECTS\\ZenShifu\\project\\dist"
+publishOrigin = "config"
+commandOrigin = "config"
+command = "npm run build"
+
+[build.environment]
+NODE_VERSION = "18"
+VITE_SUPABASE_URL = "https://xvivgzdetqhfntokqqth.supabase.co"
+VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh2aXZnemRldHFoZm50b2txcXRoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTAxNjQxMjYsImV4cCI6MjA2NTc0MDEyNn0.ZX429d0k7ZOWvGYY8rpMNgrHOwevzMP6apyl6Z2u6wA"
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200.0
+force = false
+
+[redirects.query]
+
+[redirects.conditions]
+
+[redirects.headers]

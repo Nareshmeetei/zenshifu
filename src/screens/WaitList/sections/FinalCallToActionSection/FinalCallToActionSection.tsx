@@ -42,9 +42,13 @@ export const FinalCallToActionSection = (): JSX.Element => {
         </div>
 
         <div className="flex flex-col w-full max-w-[853px] items-center gap-8 md:gap-[49px]">
-          <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-full px-4">
             <p className="[font-family:'Sora',Helvetica] font-normal text-[#7b7b7b] text-sm md:text-base text-center leading-6 transition-all duration-1000 ease-out delay-400">
-              No more confusing buttons and links  |  No more countless clicks  |  No more chaos, only Zen
+              <span className="block sm:inline">No more confusing buttons and links</span>
+              <span className="hidden sm:inline">  |  </span>
+              <span className="block sm:inline">No more countless clicks</span>
+              <span className="hidden sm:inline">  |  </span>
+              <span className="block sm:inline">No more chaos, only Zen</span>
             </p>
           </div>
 

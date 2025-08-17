@@ -136,9 +136,9 @@ export const Footer = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="bg-[#057067] hover:bg-[#0a8a7d] text-white px-6 md:px-10 py-2 md:py-3 rounded-full font-['Sora',Helvetica] font-medium text-sm md:text-base transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed h-full whitespace-nowrap"
+                  className="bg-[#057067] hover:bg-[#0a8a7d] text-white px-4 md:px-10 py-2 md:py-3 rounded-full font-['Sora',Helvetica] font-medium text-xs md:text-base transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed h-full whitespace-nowrap"
                 >
-                  {isLoading ? 'Sending...' : 'Send Me the Good Vibes'}
+                  {isLoading ? 'Sending...' : <span><span className="hidden sm:inline">Send Me the Good Vibes</span><span className="sm:hidden">Subscribe</span></span>}
                 </Button>
               </form>
             </div>
