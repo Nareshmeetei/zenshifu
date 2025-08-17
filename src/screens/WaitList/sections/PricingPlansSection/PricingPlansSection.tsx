@@ -21,7 +21,7 @@ const pricingPlans = [
       "100 AI Chats/day",
       "Advanced analytics",
       "Engagement inbox",
-      "Lifetime waitlist discount locked in",
+      "Lifetime discount secured",
     ],
   },
 ];
