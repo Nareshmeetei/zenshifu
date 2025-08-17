@@ -42,12 +42,20 @@ export const ProblemOverviewSection = (): JSX.Element => {
                   }`}
                   style={{ transitionDelay: `${300 + index * 100}ms` }}
                 >
-                  <div className="w-4 h-4 mt-[7px] bg-[#f75252] rotate-45 rounded-[54.28px] overflow-hidden relative flex-shrink-0 transition-all duration-300 ease-out">
-                    <img
-                      className="absolute w-[18px] h-[18px] -top-px -left-0.5 -rotate-45"
-                      alt="Plus outline"
-                      src="/plus-outline.svg"
-                    />
+                  <div className="w-4 h-4 mt-[7px] bg-[#f75252] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ease-out">
+                    <svg
+                      className="w-2.5 h-2.5 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
                   </div>
                   <span className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base leading-[31px] transition-colors duration-300 ease-out">
                     {point}
