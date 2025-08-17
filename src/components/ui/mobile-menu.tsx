@@ -48,12 +48,12 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
       
       {/* Menu Panel */}
       <div
-        className={`absolute top-0 right-0 h-full w-[280px] bg-white shadow-2xl transform transition-transform duration-300 ease-out ${
+        className={`absolute top-0 right-0 h-full w-[280px] bg-white/50 backdrop-blur-md shadow-2xl border-l border-white/20 transform transition-transform duration-300 ease-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-gray-100">
+        <div className="flex items-center justify-between p-6 border-b border-white/30">
           <img
             className="w-[100px] h-auto"
             alt="ZenShifu Logo"
@@ -61,7 +61,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
           />
           <button
             onClick={onClose}
-            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-100 transition-colors duration-200"
+            className="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white/30 transition-colors duration-200"
           >
             <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
