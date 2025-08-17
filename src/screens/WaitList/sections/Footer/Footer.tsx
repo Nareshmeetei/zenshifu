@@ -116,16 +116,17 @@ export const Footer = (): JSX.Element => {
               Updates, tips, and calm stuff in your inbox to help you grow faster.
             </p>
             
-            {/* Email subscription - Original design with autocomplete fix */}
+            {/* Email subscription - stacked on mobile, inline on desktop */}
             <div className="relative max-w-xl mx-auto">
-              <form onSubmit={handleSubmit} className="relative flex bg-[#0a2b31] rounded-full border border-[#134249] overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-12 md:h-16">
+              {/* Desktop Form - Inline Layout */}
+              <form onSubmit={handleSubmit} className="hidden md:flex bg-[#0a2b31] rounded-full border border-[#134249] overflow-hidden hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-16">
                 <Input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
-                  className="flex-1 bg-transparent border-none text-white placeholder-[#a0b3b8] px-4 md:px-6 py-3 md:py-5 font-['Sora',Helvetica] font-normal text-sm md:text-base focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none disabled:opacity-50 h-full"
+                  className="flex-1 bg-transparent border-none text-white placeholder-[#a0b3b8] px-6 py-5 font-['Sora',Helvetica] font-normal text-base focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none disabled:opacity-50 h-full"
                   style={{ 
                     boxShadow: 'none',
                     WebkitBoxShadow: 'inset 0 0 0 1000px #0a2b31',
@@ -136,9 +137,34 @@ export const Footer = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="bg-[#057067] hover:bg-[#0a8a7d] text-white px-4 md:px-10 py-2 md:py-3 rounded-full font-['Sora',Helvetica] font-medium text-xs md:text-base transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed h-full whitespace-nowrap"
+                  className="bg-[#057067] hover:bg-[#0a8a7d] text-white px-10 py-3 rounded-full font-['Sora',Helvetica] font-medium text-base transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed h-full whitespace-nowrap"
                 >
-                  {isLoading ? 'Sending...' : <span><span className="hidden sm:inline">Send Me the Good Vibes</span><span className="sm:hidden">Subscribe</span></span>}
+                  {isLoading ? 'Sending...' : 'Send Me the Good Vibes'}
+                </Button>
+              </form>
+
+              {/* Mobile Form - Stacked Layout */}
+              <form onSubmit={handleSubmit} className="md:hidden flex flex-col gap-4">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={isLoading}
+                  className="w-full h-[50px] bg-[#0a2b31] rounded-[25px] border border-[#134249] text-white placeholder-[#a0b3b8] px-4 font-['Sora',Helvetica] font-normal text-sm focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none disabled:opacity-50"
+                  style={{ 
+                    boxShadow: 'none',
+                    WebkitBoxShadow: 'inset 0 0 0 1000px #0a2b31',
+                    WebkitTextFillColor: '#D5D5D5',
+                    backgroundColor: 'transparent'
+                  }}
+                />
+                <Button 
+                  type="submit"
+                  disabled={isLoading || !email.trim()}
+                  className="w-full h-[50px] bg-[#057067] hover:bg-[#0a8a7d] text-white rounded-[25px] font-['Sora',Helvetica] font-medium text-sm transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed"
+                >
+                  {isLoading ? 'Sending...' : 'Subscribe'}
                 </Button>
               </form>
             </div>

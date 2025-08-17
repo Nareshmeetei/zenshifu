@@ -48,12 +48,12 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
       
       {/* Menu Panel */}
       <div
-        className={`absolute top-0 right-0 h-full w-[280px] bg-white/50 backdrop-blur-md shadow-2xl border-l border-white/20 transform transition-transform duration-300 ease-out ${
+        className={`absolute top-0 right-0 h-full w-[280px] bg-white/80 backdrop-blur-md shadow-2xl border-l border-white/30 transform transition-transform duration-300 ease-out ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-6 border-b border-white/30">
+        <div className="flex items-center justify-between p-6 border-b border-gray-200/50">
           <img
             className="w-[100px] h-auto"
             alt="ZenShifu Logo"

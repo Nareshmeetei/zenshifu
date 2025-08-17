@@ -169,22 +169,43 @@ export const HeroSection = (): JSX.Element => {
               </p>
             </div>
 
-            {/* Email input and waitlist button - decreased width by 15% (from 712px to 605px) */}
+            {/* Email input and waitlist button - stacked on mobile, inline on desktop */}
             <div className="flex flex-col w-full max-w-[605px] items-center gap-6 md:gap-[37px] transition-all duration-1000 ease-out delay-400">
-              <form onSubmit={handleSubmit} className="relative w-full h-[60px] md:h-[81px] bg-[#ebf4f4] rounded-[30px] md:rounded-[40px] overflow-hidden border border-solid border-[#bab9b9] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
+              {/* Desktop Form - Inline Layout */}
+              <form onSubmit={handleSubmit} className="hidden md:block relative w-full h-[81px] bg-[#ebf4f4] rounded-[40px] overflow-hidden border border-solid border-[#bab9b9] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
                 <Input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   disabled={isLoading}
-                  className="absolute w-[calc(100%-200px)] md:w-[calc(100%-272px)] h-full top-0 left-0 border-none bg-transparent pl-4 md:pl-7 font-['Sora',Helvetica] font-normal text-[#868686] text-sm md:text-base focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none transition-all duration-300 disabled:opacity-50"
+                  className="absolute w-[calc(100%-272px)] h-full top-0 left-0 border-none bg-transparent pl-7 font-['Sora',Helvetica] font-normal text-[#868686] text-base focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none transition-all duration-300 disabled:opacity-50"
                   style={{ boxShadow: 'none' }}
                 />
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="absolute w-[195px] md:w-[267px] h-[50px] md:h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#057067] text-white font-['Sora',Helvetica] font-medium text-sm md:text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-4 md:px-6"
+                  className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#057067] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
+                >
+                  {isLoading ? 'Joining...' : 'Join Waitlist to Stay Zen'}
+                </Button>
+              </form>
+
+              {/* Mobile Form - Stacked Layout */}
+              <form onSubmit={handleSubmit} className="md:hidden w-full flex flex-col gap-4">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  disabled={isLoading}
+                  className="w-full h-[50px] bg-[#ebf4f4] rounded-[25px] border border-solid border-[#bab9b9] px-4 font-['Sora',Helvetica] font-normal text-[#868686] text-sm focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none transition-all duration-300 disabled:opacity-50"
+                  style={{ boxShadow: 'none' }}
+                />
+                <Button 
+                  type="submit"
+                  disabled={isLoading || !email.trim()}
+                  className="w-full h-[50px] bg-[#057067] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
                 >
                   {isLoading ? 'Joining...' : 'Join Waitlist to Stay Zen'}
                 </Button>
