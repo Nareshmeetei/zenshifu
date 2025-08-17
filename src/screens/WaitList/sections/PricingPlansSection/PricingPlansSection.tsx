@@ -23,41 +23,6 @@ const pricingPlans = [
       "Engagement inbox",
     ],
   },
-  {
-    name: "Pro",
-    description: "Perfect for small-medium creators, teams and solopreneures",
-    price: "$199",
-    recommended: true,
-    paymentLink: "https://checkout.dodopayments.com/buy/pdt_Z0mYHHrnl5LeEpRcAjhDF?quantity=1",
-    features: [
-      "5 Social Sets",
-      "Unlimited Posts/month",
-      "3 User Accounts",
-      "Task Management",
-      "150 Task Prompts/day",
-      "3,500 Task Prompts/month",
-      "Unlimited AI Chats",
-      "Advanced analytics",
-      "Engagement inbox",
-    ],
-  },
-  {
-    name: "Premium",
-    description: "Perfect for visionary creators, teams, agencies and startups",
-    price: "$249",
-    paymentLink: "https://checkout.dodopayments.com/buy/pdt_eCUkwz0v418FxM5lbhwLx?quantity=1",
-    features: [
-      "Unlimited Social Sets",
-      "Unlimited Posts/month",
-      "Unlimited User Accounts",
-      "Task Management",
-      "5,000 Task Prompts/day",
-      "100,000 Task Prompts/month",
-      "Unlimited AI Chats",
-      "Advanced analytics",
-      "Engagement inbox",
-    ],
-  },
 ];
 
 export const PricingPlansSection = (): JSX.Element => {
@@ -91,21 +56,19 @@ export const PricingPlansSection = (): JSX.Element => {
         <div className="flex flex-col items-center gap-8 md:gap-[59px] w-full">
           <div 
             ref={cardsRef}
-            className="flex flex-col lg:flex-row justify-center gap-4 md:gap-[19px] w-full max-w-[1125px]"
+            className="flex justify-center w-full"
           >
             {pricingPlans.map((plan, index) => (
               <Card
                 key={index}
-                className={`w-full max-w-[351px] mx-auto bg-[#f3f8f7] rounded-[20px] md:rounded-[30px] border-[#cde2e1] overflow-hidden transition-all duration-500 ease-out ${
-                  plan.recommended ? 'ring-2 ring-[#b5ff99] ring-opacity-50' : ''
-                } ${
+                className={`w-full max-w-[351px] md:max-w-[500px] mx-auto bg-[#f3f8f7] rounded-[20px] md:rounded-[30px] border-[#cde2e1] overflow-hidden transition-all duration-500 ease-out ${
                   cardsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <CardContent className="p-0">
                   <div className="flex flex-col items-center gap-4 md:gap-[27px] pt-4 md:pt-[23px]">
-                    <div className="flex flex-col w-[280px] md:w-[281px] items-start gap-6 md:gap-[37px]">
+                    <div className="flex flex-col w-[280px] md:w-[420px] items-start gap-6 md:gap-[37px]">
                       <div className="flex flex-col gap-4 md:gap-6 w-full">
                         <div className="flex flex-col gap-[5px] w-full">
                           <div className="relative">
@@ -143,22 +106,40 @@ export const PricingPlansSection = (): JSX.Element => {
 
                     <div className="w-full h-px bg-[#cde2e1]" />
 
-                    <div className="w-[250px] md:w-[270px] pb-4 md:pb-6">
-                      <ul className="space-y-3 md:space-y-[16px]">
+                    <div className="w-[250px] md:w-[400px] pb-4 md:pb-6">
+                      {/* Mobile: Single column list */}
+                      <ul className="md:hidden space-y-3">
                         {plan.features.map((feature, featureIndex) => (
                           <li
                             key={featureIndex}
-                            className="flex items-start gap-2 md:gap-[9px] transition-all duration-300 ease-out"
+                            className="flex items-start gap-2 transition-all duration-300 ease-out"
                           >
-                            <div className="w-4 md:w-[18px] h-4 md:h-[18px] mt-1 md:mt-[7px] bg-[#b5ff99] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
-                              <CheckIcon className="w-3 md:w-[13px] h-3 md:h-[13px] text-[#057067]" />
+                            <div className="w-4 h-4 mt-1 bg-[#b5ff99] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
+                              <CheckIcon className="w-3 h-3 text-[#057067]" />
                             </div>
-                            <span className="text-[#7b7b7b] text-sm md:text-base leading-[28px] md:leading-[34px] [font-family:'Sora',Helvetica] transition-colors duration-300 ease-out">
+                            <span className="text-[#7b7b7b] text-sm leading-[28px] [font-family:'Sora',Helvetica] transition-colors duration-300 ease-out">
                               {feature}
                             </span>
                           </li>
                         ))}
                       </ul>
+
+                      {/* Desktop: Two column grid */}
+                      <div className="hidden md:grid grid-cols-2 gap-x-4 gap-y-4">
+                        {plan.features.map((feature, featureIndex) => (
+                          <div
+                            key={featureIndex}
+                            className="flex items-start gap-[9px] transition-all duration-300 ease-out"
+                          >
+                            <div className="w-[18px] h-[18px] mt-[7px] bg-[#b5ff99] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
+                              <CheckIcon className="w-[13px] h-[13px] text-[#057067]" />
+                            </div>
+                            <span className="text-[#7b7b7b] text-base leading-[34px] [font-family:'Sora',Helvetica] transition-colors duration-300 ease-out">
+                              {feature}
+                            </span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </CardContent>
