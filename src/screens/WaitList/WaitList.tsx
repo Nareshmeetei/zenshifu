@@ -125,13 +125,30 @@ export const WaitList = (): JSX.Element => {
                     Connect & Manage Them All In One Chat
                   </h2>
 
-                  {/* Container increased by 20% (from 550px/770px to 660px/924px) and gaps doubled (from 3px/13px to 6px/26px) */}
-                  <div className="w-full max-w-[660px] md:max-w-[924px] h-[70px] md:h-[94px] bg-[#f3f8f780] rounded-[44px] md:rounded-[73px] border-[0.73px] border-solid border-[#cde2e1] overflow-hidden mx-auto">
-                    <div className="flex items-center justify-center gap-6 md:gap-[26px] h-full px-4 md:px-[32px]">
+                  {/* Mobile: 2 rows, Desktop: single row */}
+                  <div className="w-full max-w-[660px] md:max-w-[924px] bg-[#f3f8f780] rounded-[44px] md:rounded-[73px] border-[0.73px] border-solid border-[#cde2e1] overflow-hidden mx-auto">
+                    {/* Mobile: Grid layout with 2 rows */}
+                    <div className="md:hidden grid grid-cols-6 gap-3 p-4">
                       {appIcons.map((icon, index) => (
                         <div
                           key={index}
-                          className="relative w-[31px] md:w-[44px] h-[31px] md:h-[44px] flex-shrink-0"
+                          className="relative w-[31px] h-[31px] flex-shrink-0 flex items-center justify-center"
+                        >
+                          <img
+                            className="w-full h-full object-contain"
+                            alt={icon.alt}
+                            src={icon.src}
+                          />
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Desktop: Flex layout with single row */}
+                    <div className="hidden md:flex items-center justify-center gap-[26px] h-[94px] px-[32px]">
+                      {appIcons.map((icon, index) => (
+                        <div
+                          key={index}
+                          className="relative w-[44px] h-[44px] flex-shrink-0"
                         >
                           <img
                             className="w-full h-full object-contain"
