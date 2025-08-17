@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "../../../../components/ui/button";
 import { Input } from "../../../../components/ui/input";
 import { Toast } from "../../../../components/ui/toast";
+import { MobileMenu } from "../../../../components/ui/mobile-menu";
 import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 import { useScrollPosition } from "../../../../hooks/useScrollPosition";
 import { useWaitlistSignup } from "../../../../hooks/useWaitlistSignup";
@@ -10,6 +11,7 @@ export const HeroSection = (): JSX.Element => {
   const [heroRef, heroVisible] = useScrollAnimation(0.1);
   const [imageRef, imageVisible] = useScrollAnimation(0.2);
   const [email, setEmail] = useState('');
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { signupForWaitlist, isLoading, message, clearMessage } = useWaitlistSignup();
   const { isScrolled } = useScrollPosition();
 
@@ -67,14 +69,25 @@ export const HeroSection = (): JSX.Element => {
               ))}
             </div>
 
+            {/* Desktop CTA Button */}
             <Button
               variant="outline"
               onClick={() => scrollToSection('#pricing')}
-              className="rounded-[50px] md:rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-3 md:px-6 py-2 md:py-2.75 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-xs md:text-sm whitespace-nowrap"
+              className="hidden sm:flex rounded-[50px] md:rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-3 md:px-6 py-2 md:py-2.75 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-xs md:text-sm whitespace-nowrap"
             >
               <span className="hidden sm:inline">Join Waitlist</span>
               <span className="sm:hidden">Join</span>
             </Button>
+
+            {/* Mobile Hamburger Menu */}
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              className="sm:hidden w-8 h-8 flex items-center justify-center rounded-lg border-2 border-[#057067] hover:bg-[#057067] hover:text-white transition-all duration-300 ease-out"
+            >
+              <svg className="w-5 h-5 text-[#057067] hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
@@ -115,13 +128,24 @@ export const HeroSection = (): JSX.Element => {
               ))}
             </div>
 
+            {/* Desktop CTA Button */}
             <Button
               variant="outline"
               onClick={() => scrollToSection('#pricing')}
-              className="rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-4 md:px-6 py-2.2 md:py-3.85 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-sm md:text-base"
+              className="hidden sm:flex rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-4 md:px-6 py-2.2 md:py-3.85 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-sm md:text-base"
             >
               Join Waitlist
             </Button>
+
+            {/* Mobile Hamburger Menu */}
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              className="sm:hidden w-10 h-10 flex items-center justify-center rounded-lg border-2 border-[#057067] hover:bg-[#057067] transition-all duration-300 ease-out group"
+            >
+              <svg className="w-5 h-5 text-[#057067] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -182,6 +206,14 @@ export const HeroSection = (): JSX.Element => {
           />
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      <MobileMenu
+        isOpen={isMobileMenuOpen}
+        onClose={() => setIsMobileMenuOpen(false)}
+        navLinks={navLinks}
+        onNavigate={scrollToSection}
+      />
     </section>
   );
 };

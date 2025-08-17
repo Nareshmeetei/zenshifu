@@ -36,7 +36,7 @@ export const UniqueValuePropositionSection = (): JSX.Element => {
   };
 
   return (
-    <section className="w-full py-8 md:py-16 flex justify-center">
+    <section className="w-full py-8 md:py-16 mb-8 md:mb-16 flex justify-center">
       <div className="relative w-full max-w-[1291px] bg-[#e7eefe] rounded-[20px] md:rounded-[30px] overflow-hidden border-[3px] md:border-[5px] border-solid border-[#ffffff4c] mx-4 md:mx-6">
         {/* Background gradient effects with subtle animation */}
         <div className="absolute w-48 md:w-72 h-48 md:h-72 top-[200px] md:top-[342px] right-[50px] md:right-[1104px] bg-[#1af3f2cc] rounded-[72px] md:rounded-[144px] blur-[100px] md:blur-[200px] animate-pulse" />

@@ -46,7 +46,7 @@ export const HowItWorksSection = (): JSX.Element => {
   };
 
   return (
-    <section className="w-full py-8 md:py-16 bg-[#f0fdfd80] relative">
+    <section id="how-it-works" className="w-full py-8 md:py-16 bg-[#f0fdfd80] relative">
       <div className="flex flex-col items-center gap-8 md:gap-[45px] w-full max-w-[1440px] mx-auto px-4 md:px-6">
         <div 
           ref={sectionRef}
