@@ -7,8 +7,8 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 // Define plan data for reusability
 const pricingPlans = [
   {
-    name: "Basic",
-    description: "Perfect for those who're starting out",
+    name: "Founding Member Plan",
+    description: "One price. Lifetime bragging rights.",
     price: "$99",
     paymentLink: "https://checkout.dodopayments.com/buy/pdt_hXTdqrKtCrwR2jDdPLtPa?quantity=1",
     features: [
@@ -21,6 +21,7 @@ const pricingPlans = [
       "100 AI Chats/day",
       "Advanced analytics",
       "Engagement inbox",
+      "Lifetime waitlist discount locked in",
     ],
   },
 ];
