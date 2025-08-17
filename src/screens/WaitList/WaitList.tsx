@@ -55,7 +55,7 @@ export const WaitList = (): JSX.Element => {
         <UniqueValuePropositionSection />
         
         {/* Spacer between UVP and Target Audience */}
-        <div className="py-5 md:py-10"></div>
+        <div className="py-5 md:py-1"></div>
         
         {/* Target Audience Section */}
         <section id="who-its-for">
@@ -105,7 +105,7 @@ export const WaitList = (): JSX.Element => {
         </div>
 
         {/* Spacer before Pricing Plans */}
-        <div className="py-5 md:py-10"></div>
+        <div className="py-5 md:py-1"></div>
 
         {/* Pricing Plans Section */}
         <section id="pricing">

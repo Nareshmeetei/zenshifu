@@ -36,7 +36,7 @@ export const PricingPlansSection = (): JSX.Element => {
   };
 
   return (
-    <section id="pricing" className="py-16 md:py-24 w-full mt-40 md:mt-16">
+    <section id="pricing" className="py-16 md:py-24 w-full mt-40 md:mt-0">
       <div className="flex flex-col items-center gap-8 md:gap-[61px] w-full max-w-[1440px] mx-auto px-4 md:px-6">
         <div 
           ref={headerRef}

@@ -52,7 +52,7 @@ export const TargetAudienceSection = (): JSX.Element => {
   };
 
   return (
-    <section id="who-its-for" className="w-full pt-0 pb-8 md:pt-2 md:pb-16">
+    <section id="who-its-for" className="w-full pt-0 pb-8 md:pt-0 md:pb-8">
       {/* Reduced padding from bottom and sides by 30% (from 16/12 to 11.2/8.4, rounded to 11/8) */}
       <div className="w-full max-w-[1440px] mx-auto flex flex-col items-center gap-11 md:gap-[59px] px-6 md:px-8">
         <div className="flex flex-col items-center gap-8 md:gap-[50px] w-full">
