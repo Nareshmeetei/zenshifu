@@ -61,14 +61,14 @@ export const PricingPlansSection = (): JSX.Element => {
             {pricingPlans.map((plan, index) => (
               <Card
                 key={index}
-                className={`w-full max-w-[351px] md:max-w-[500px] mx-auto bg-[#f3f8f7] rounded-[20px] md:rounded-[30px] border-[#cde2e1] overflow-hidden transition-all duration-500 ease-out ${
+                className={`w-full max-w-[351px] md:max-w-[650px] mx-auto bg-[#f3f8f7] rounded-[20px] md:rounded-[30px] border-[#cde2e1] overflow-hidden transition-all duration-500 ease-out ${
                   cardsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
                 }`}
                 style={{ transitionDelay: `${index * 200}ms` }}
               >
                 <CardContent className="p-0">
                   <div className="flex flex-col items-center gap-4 md:gap-[27px] pt-4 md:pt-[23px]">
-                    <div className="flex flex-col w-[280px] md:w-[420px] items-start gap-6 md:gap-[37px]">
+                    <div className="flex flex-col w-[280px] md:w-[546px] items-start gap-6 md:gap-[37px]">
                       <div className="flex flex-col gap-4 md:gap-6 w-full">
                         <div className="flex flex-col gap-[5px] w-full">
                           <div className="relative">
@@ -106,7 +106,7 @@ export const PricingPlansSection = (): JSX.Element => {
 
                     <div className="w-full h-px bg-[#cde2e1]" />
 
-                    <div className="w-[250px] md:w-[400px] pb-4 md:pb-6">
+                    <div className="w-[250px] md:w-[520px] pb-4 md:pb-6">
                       {/* Mobile: Single column list */}
                       <ul className="md:hidden space-y-3">
                         {plan.features.map((feature, featureIndex) => (
