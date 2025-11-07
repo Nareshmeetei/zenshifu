@@ -7,7 +7,7 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 // Define plan data for reusability
 const pricingPlans = [
   {
-    name: "Founding Member",
+    name: "The 200 Club",
     description: "One price. Use it for lifetime. No monthly payments. Only for first 200 users.",
     price: "$99",
     paymentLink: "https://checkout.dodopayments.com/buy/pdt_hXTdqrKtCrwR2jDdPLtPa?quantity=1",
@@ -101,7 +101,7 @@ export const PricingPlansSection = (): JSX.Element => {
                         onClick={() => handlePurchase(plan.paymentLink)}
                         className="w-full h-[50px] md:h-[58px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg font-medium text-sm md:text-base [font-family:'Sora',Helvetica] transition-all duration-300 ease-out border-none"
                       >
-                        Get {plan.name} Plan
+                        Get {plan.name}
                       </Button>
                     </div>
 
