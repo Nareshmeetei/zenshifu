@@ -101,7 +101,7 @@ export const PricingPlansSection = (): JSX.Element => {
                         onClick={() => handlePurchase(plan.paymentLink)}
                         className="w-full h-[50px] md:h-[58px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg font-medium text-sm md:text-base [font-family:'Sora',Helvetica] transition-all duration-300 ease-out border-none"
                       >
-                        Get {plan.name}
+                        Get {plan.name} Plan
                       </Button>
                     </div>
 
