@@ -13,7 +13,7 @@ export const TargetAudienceSection = (): JSX.Element => {
     {
       id: 1,
       title: "Agencies",
-      description: "Who're juggling too many accounts",
+      description: "Deliver elite stores in hours, not weeks.",
       iconSrc: "/Agencies icon.png",
       iconWidth: "133px",
       iconHeight: "185px",
@@ -21,7 +21,7 @@ export const TargetAudienceSection = (): JSX.Element => {
     {
       id: 2,
       title: "Solopreneurs",
-      description: "Who wear all the hats and tired of repetitive tasks",
+      description: "Build fast, look premium, sell confidently.",
       iconSrc: "/Solopreneures icon.png",
       iconWidth: "174px",
       iconHeight: "154px",
@@ -29,7 +29,7 @@ export const TargetAudienceSection = (): JSX.Element => {
     {
       id: 3,
       title: "Teams",
-      description: "Who're small in size and mighty in mission",
+      description: "Manage and scale without tech debt.",
       iconSrc: "/Teams icon.png",
       iconWidth: "155px",
       iconHeight: "166px",
@@ -37,7 +37,7 @@ export const TargetAudienceSection = (): JSX.Element => {
     {
       id: 4,
       title: "Creators",
-      description: "Who want consistency without burnout",
+      description: "Turn ideas into brands without touching code.",
       iconSrc: "/Creators icon.png",
       iconWidth: "169px",
       iconHeight: "173px",
@@ -63,13 +63,8 @@ export const TargetAudienceSection = (): JSX.Element => {
             }`}
           >
             <h2 className="font-medium text-[28px] md:text-[40px] text-[#2c2c2c] text-center leading-[40px] md:leading-[55px] [font-family:'Besley',Helvetica] transition-all duration-1200 ease-out">
-              Who&apos;s ZenShifu For
+              Built for the Quiet Rebels
             </h2>
-
-            <p className="text-[#5e5e5e] text-base text-center leading-6 [font-family:'Sora',Helvetica] transition-all duration-1000 ease-out delay-200">
-              Designed for doers and dreamers. It&apos;s perfect for
-              visionary...
-            </p>
           </div>
 
           <div 
@@ -117,7 +112,7 @@ export const TargetAudienceSection = (): JSX.Element => {
         {/* Reduced padding from button by 30% (from pt-8 md:pt-12 to pt-6 md:pt-8) */}
         <div className="pt-6 md:pt-8">
           {/* Made button wider with more padding to match the attached image */}
-          <Button 
+          <Button
             ref={buttonRef}
             onClick={() => scrollToSection('#pricing')}
             className={`w-full max-w-[500px] h-[60px] md:h-[70px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-500 ease-out border-none px-8 md:px-12 ${
@@ -125,7 +120,7 @@ export const TargetAudienceSection = (): JSX.Element => {
             }`}
           >
             <span className="[font-family:'Sora',Helvetica] font-medium text-base">
-              Join Waitlist for Early Access
+              Join the Waitlist
             </span>
           </Button>
         </div>

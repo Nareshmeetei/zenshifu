@@ -8,20 +8,16 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 const pricingPlans = [
   {
     name: "The 200 Club",
-    description: "One price. Use it for lifetime. No monthly payments. Only for first 200 users.",
+    description: "Lifetime access for just $99. No subscriptions. No hidden fees. Only 200 seats.",
     price: "$99",
     paymentLink: "https://checkout.dodopayments.com/buy/pdt_hXTdqrKtCrwR2jDdPLtPa?quantity=1",
     features: [
-      "1 Social Set",
-      "30 Posts/month",
+      "1 AI Store Builder",
       "1 User Account",
-      "Unlimited Manual Schedule",
-      "30 Task Prompts/day",
-      "500 Task Prompts/month",
-      "100 AI Chats/day",
-      "Advanced analytics",
-      "Engagement inbox",
-      "Lifetime discount secured",
+      "100 AI Commands/Day",
+      "Unlimited Manual Edits",
+      "Advanced Analytics",
+      "Unlimited Discount Access",
     ],
   },
 ];
@@ -45,13 +41,8 @@ export const PricingPlansSection = (): JSX.Element => {
           }`}
         >
           <h2 className="font-medium text-[28px] md:text-[40px] text-[#2c2c2c] text-center leading-[40px] md:leading-[55px] [font-family:'Besley',Helvetica] transition-all duration-1200 ease-out">
-            Special Limited Time Waitlist Offer
+            Special Early Access Offer
           </h2>
-
-          <p className="text-[#5e5e5e] text-base text-center leading-6 [font-family:'Sora',Helvetica] transition-all duration-1000 ease-out delay-200">
-            This one-time-payment offer&apos;s only for those who sign up for
-            the waitlist. The price will be changed after launch.
-          </p>
         </div>
 
         <div className="flex flex-col items-center gap-8 md:gap-[59px] w-full">
@@ -97,11 +88,11 @@ export const PricingPlansSection = (): JSX.Element => {
                         </div>
                       </div>
 
-                      <Button 
+                      <Button
                         onClick={() => handlePurchase(plan.paymentLink)}
                         className="w-full h-[50px] md:h-[58px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg font-medium text-sm md:text-base [font-family:'Sora',Helvetica] transition-all duration-300 ease-out border-none"
                       >
-                        Get {plan.name} Plan
+                        Join the {plan.name}
                       </Button>
                     </div>
 

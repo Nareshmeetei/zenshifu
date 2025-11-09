@@ -55,12 +55,12 @@ export const HowItWorksSection = (): JSX.Element => {
           }`}
         >
           <h2 className="[font-family:'Besley',Helvetica] font-medium text-[#2c2c2c] text-[28px] md:text-[40px] text-center leading-[40px] md:leading-[55px] transition-all duration-1200 ease-out">
-            ZenShifu Is the Calm in the Content Storm
+            ZenShifu Is the Calm in the Commerce Storm.
           </h2>
 
           <p className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-base text-center leading-6 transition-all duration-1000 ease-out delay-200">
-            One chat. All your socials. Done. You just say what you want... like
-            this:
+            Every command turns into progress. Every idea becomes a polished brand.<br />
+            ZenShifu makes creation effortless—and execution automatic.
           </p>
         </div>
 
@@ -102,24 +102,12 @@ export const HowItWorksSection = (): JSX.Element => {
         <div className={`flex flex-col w-full max-w-[929px] items-center gap-8 md:gap-[52px] transition-all duration-1000 ease-out delay-300 ${
           cardVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <div className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-lg md:text-xl text-center transition-all duration-1000 ease-out">
-            <span className="font-bold leading-7">It does the rest:</span>
-            <span className="text-[20px] md:text-[25px] leading-7">
-              {" "}
-              <br />
-            </span>
-            <span className="text-base leading-7">
-              Writing draft, formatting, scheduling, optimizing, and even
-              adapting for each platform.
-            </span>
-          </div>
-
-          <Button 
+          <Button
             onClick={() => scrollToSection('#pricing')}
             className="w-full max-w-[351px] h-[60px] md:h-[70px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
           >
             <span className="[font-family:'Sora',Helvetica] font-medium text-base">
-              Join Waitlist for Early Access
+              Join the Waitlist
             </span>
           </Button>
         </div>

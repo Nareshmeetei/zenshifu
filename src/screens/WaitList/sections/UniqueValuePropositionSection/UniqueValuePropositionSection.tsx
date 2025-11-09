@@ -7,20 +7,16 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 // Define the feature data for mapping
 const features = [
   {
-    title: "Chat-First Simplicity",
-    description: "– Just type it out to get it done",
+    title: "All-in-One Genius:",
+    description: "Design, products, marketing, analytics—all in one chat.",
   },
   {
-    title: "AI Agents on Autopilot",
-    description: "– Handles all your boring stuff",
+    title: "Luxury Look by Default:",
+    description: "Your store looks premium from day one, no designer needed.",
   },
   {
-    title: "Multi-Platform Mastery",
-    description: "– Instagram, LinkedIn, X, TikTok & more",
-  },
-  {
-    title: "Designed for Growth & Sanity",
-    description: "– Schedule, manage, grow & stay Zen",
+    title: "Speed That Stuns:",
+    description: "Launch faster than others can pick a theme.",
   },
 ];
 
@@ -70,12 +66,8 @@ export const UniqueValuePropositionSection = (): JSX.Element => {
               <div className="flex flex-col items-start gap-4 w-full">
                 <div className="flex flex-col items-start gap-3 md:gap-[15px] w-full">
                   <h2 className="mt-[-1.00px] font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[28px] md:text-[40px] leading-[40px] md:leading-[55px] transition-all duration-1200 ease-out">
-                    Why It&apos;s Different
+                    Why ZenShifu Outbuilds Ordinary
                   </h2>
-                  <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base leading-6 transition-all duration-1000 ease-out delay-200">
-                    ZenShifu isn&apos;t a tool. It&apos;s a teammate that works
-                    for you
-                  </p>
                 </div>
 
                 <ul className="space-y-[6px] w-full">
@@ -99,12 +91,12 @@ export const UniqueValuePropositionSection = (): JSX.Element => {
                 </ul>
               </div>
 
-              <Button 
+              <Button
                 onClick={() => scrollToSection('#pricing')}
                 className="w-full max-w-[237px] h-[50px] md:h-[55px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
               >
                 <span className="font-['Sora',Helvetica] font-medium text-base">
-                  Join Waitlist
+                  Join the Waitlist
                 </span>
               </Button>
             </CardContent>

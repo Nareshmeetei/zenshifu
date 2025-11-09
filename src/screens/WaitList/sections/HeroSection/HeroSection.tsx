@@ -160,12 +160,10 @@ export const HeroSection = (): JSX.Element => {
           >
             <div className="flex flex-col items-center gap-4 md:gap-[25px] w-full">
               <h1 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[87px] w-full transition-all duration-1200 ease-out">
-                Manage Social Like You&apos;re Texting
+                Build Online Stores Like You&apos;re Texting
               </h1>
               <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base md:text-lg text-center leading-6 max-w-[797px] transition-all duration-1000 ease-out delay-200">
-                The smartest, chat-first AI assistant for effortless social
-                media management. Designed for managers, teams and creators to
-                save time, grow faster, and stay Zen.
+              AI that builds and runs your online store just by chatting. Premium, fast, effortless.
               </p>
             </div>
 
@@ -207,11 +205,11 @@ export const HeroSection = (): JSX.Element => {
                   disabled={isLoading || !email.trim()}
                   className="w-full h-[50px] bg-[#057067] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
                 >
-                  {isLoading ? 'Joining...' : 'Join Waitlist to Stay Zen'}
+                  {isLoading ? 'Joining...' : 'Join Waitlist to Outbuild'}
                 </Button>
               </form>
               <p className="font-['Sora',Helvetica] font-normal text-[#868686] text-sm md:text-base text-center leading-6 transition-opacity duration-500 ease-out">
-                By joining you&#39;re agreeing to receive emails from us
+              Join 50+ founders who&#39;re ready to outbuild.
               </p>
             </div>
           </div>

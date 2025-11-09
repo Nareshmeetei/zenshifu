@@ -32,23 +32,19 @@ export const FinalCallToActionSection = (): JSX.Element => {
       >
         <div className="flex flex-col items-center gap-6 md:gap-[33px] w-full max-w-[1071px]">
           <h2 className="font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[76px] [font-family:'Besley',Helvetica] w-full transition-all duration-1200 ease-out">
-            Chat. Get It Done. Stay Zen.
+            Less Setup. More Selling.
           </h2>
 
           <p className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-lg md:text-xl text-center leading-6 w-full transition-all duration-1000 ease-out delay-200">
-            Like you&apos;re chatting with a smart assistant and making her get
-            your things done.
+            While others tweak menus, you&apos;re already making sales.<br />
+            ZenShifu gives you time, taste, and total control—without the grind.
           </p>
         </div>
 
         <div className="flex flex-col w-full max-w-[853px] items-center gap-8 md:gap-[49px]">
           <div className="flex items-center justify-center w-full px-4">
             <p className="[font-family:'Sora',Helvetica] font-normal text-[#7b7b7b] text-sm md:text-base text-center leading-6 transition-all duration-1000 ease-out delay-400">
-              <span className="block sm:inline">No more confusing buttons and links</span>
-              <span className="hidden sm:inline">  |  </span>
-              <span className="block sm:inline">No more countless clicks</span>
-              <span className="hidden sm:inline">  |  </span>
-              <span className="block sm:inline">No more chaos, only Zen</span>
+              More Zen. More Wins. Outbuild Ordinary.
             </p>
           </div>
 
@@ -71,7 +67,7 @@ export const FinalCallToActionSection = (): JSX.Element => {
                   disabled={isLoading || !email.trim()}
                   className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#057067] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
                 >
-                  {isLoading ? 'Joining...' : 'Join Waitlist to Stay Zen'}
+                  {isLoading ? 'Joining...' : 'Join Waitlist'}
                 </Button>
               </div>
             </form>
@@ -87,12 +83,12 @@ export const FinalCallToActionSection = (): JSX.Element => {
                 className="w-full h-[50px] bg-[#ebf4f4] rounded-[25px] border border-solid border-[#bab9b9] px-4 font-['Sora',Helvetica] font-normal text-[#868686] text-sm focus:outline-none focus:ring-0 focus:border-none focus:shadow-none focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none transition-all duration-300 disabled:opacity-50"
                 style={{ boxShadow: 'none' }}
               />
-              <Button 
+              <Button
                 type="submit"
                 disabled={isLoading || !email.trim()}
                 className="w-full h-[50px] bg-[#057067] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
               >
-                {isLoading ? 'Joining...' : 'Join Waitlist to Stay Zen'}
+                {isLoading ? 'Joining...' : 'Join Waitlist'}
               </Button>
             </form>
           </div>

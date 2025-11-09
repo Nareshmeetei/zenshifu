@@ -3,10 +3,9 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 
 // Data for pain points to enable mapping
 const painPoints = [
-  "Overwhelming dashboards",
-  "Countless tabs & clicks",
-  "Manual scheduling",
-  "Confusing buttons & links",
+  "No coding, no learning curve",
+  "AI handles design, products, orders, and campaigns",
+  "You stay focused on your vision",
 ];
 
 export const ProblemOverviewSection = (): JSX.Element => {
@@ -25,26 +24,27 @@ export const ProblemOverviewSection = (): JSX.Element => {
           >
             <div className="flex flex-col items-start gap-4 md:gap-[22px] w-full">
               <h2 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[28px] md:text-[40px] leading-[40px] md:leading-[55px] transition-all duration-1200 ease-out">
-                Social Media Shouldn&apos;t Feel Like Sending Faxes in 2025
+                Old eCommerce Feels Like Dial-Up.
               </h2>
 
               <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base leading-6 transition-all duration-1000 ease-out delay-200">
-                Yet here you are, still stuck in:
+                Still clicking through endless menus, themes, and settings?<br />
+                ZenShifu kills that chaos. It builds, designs, markets, and manages your store in one chat.
               </p>
             </div>
 
             <ul className="mt-2 space-y-[6px]">
               {painPoints.map((point, index) => (
-                <li 
-                  key={index} 
+                <li
+                  key={index}
                   className={`flex items-start gap-4 md:gap-[26px] transition-all duration-700 ease-out ${
                     sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                   }`}
                   style={{ transitionDelay: `${300 + index * 100}ms` }}
                 >
-                  <div className="w-4 h-4 mt-[7px] bg-[#f75252] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ease-out">
+                  <div className="w-4 h-4 mt-[7px] bg-[#b5ff99] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ease-out">
                     <svg
-                      className="w-2.5 h-2.5 text-white"
+                      className="w-2.5 h-2.5 text-[#057067]"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export const ProblemOverviewSection = (): JSX.Element => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
+                        d="M5 13l4 4L19 7"
                       />
                     </svg>
                   </div>
