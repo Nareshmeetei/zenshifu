@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Button } from "../../../../components/ui/button";
 import { Input } from "../../../../components/ui/input";
 import { Toast } from "../../../../components/ui/toast";
+import { Card, CardContent } from "../../../../components/ui/card";
 import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 import { useWaitlistSignup } from "../../../../hooks/useWaitlistSignup";
 
@@ -21,29 +22,28 @@ export const FinalCallToActionSection = (): JSX.Element => {
   };
 
   return (
-    <section className="w-full py-8 md:py-16 flex justify-center relative">
+    <section className="w-full flex justify-center relative">
       {message && <Toast message={message} onClose={clearMessage} />}
-      
-      <div 
+
+      <div
         ref={sectionRef}
-        className={`flex flex-col w-full max-w-[1440px] items-center gap-4 md:gap-[26px] px-4 md:px-6 transition-all duration-1000 ease-out ${
+        className={`w-full max-w-[1440px] px-4 md:px-6 transition-all duration-1000 ease-out ${
           sectionVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}
       >
-        <div className="flex flex-col items-center gap-6 md:gap-[33px] w-full max-w-[1071px]">
-          <h2 className="font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[76px] [font-family:'Besley',Helvetica] w-full transition-all duration-1200 ease-out">
-            Outbuild Ordinary. Stay Zen.
-          </h2>
+        <Card className="w-full bg-[#f0fdfd80] rounded-[20px] md:rounded-[30px] border-[#cde2e1]">
+          <CardContent className="p-8 md:p-[72px]">
+            <div className="flex flex-col items-center gap-6 md:gap-[37px]">
+              <h2 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[76px]">
+                Outbuild Ordinary. Stay Zen.
+              </h2>
 
-          <p className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-lg md:text-xl text-center leading-6 w-full transition-all duration-1000 ease-out delay-200">
-          While others wrestle with setup and countless plugins, you're already selling, growing and outbuilding.
-          </p>
-        </div>
+              <p className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-base md:text-lg text-center leading-6 w-full max-w-[1071px]">
+                While others wrestle with setup and countless plugins, you're already selling, growing and outbuilding.
+              </p>
 
-        <div className="flex flex-col w-full max-w-[853px] items-center gap-8 md:gap-[49px]">
-
-          {/* Email form - stacked on mobile, inline on desktop */}
-          <div className="w-full max-w-[605px]">
+              {/* Email form - stacked on mobile, inline on desktop */}
+              <div className="w-full max-w-[605px] mt-4">
             {/* Desktop Form - Inline Layout */}
             <form onSubmit={handleSubmit} className="hidden md:block">
               <div className="relative w-full h-[81px] bg-[#ebf4f4] rounded-[40px] overflow-hidden border border-solid border-[#bab9b9] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-lg">
@@ -85,8 +85,10 @@ export const FinalCallToActionSection = (): JSX.Element => {
                 {isLoading ? 'Joining...' : 'Join Waitlist'}
               </Button>
             </form>
-          </div>
-        </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );

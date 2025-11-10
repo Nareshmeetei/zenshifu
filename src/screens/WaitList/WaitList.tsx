@@ -1,5 +1,3 @@
-import React from "react";
-import { Card, CardContent } from "../../components/ui/card";
 import { FinalCallToActionSection } from "./sections/FinalCallToActionSection";
 import { HeroSection } from "./sections/HeroSection";
 import { HowItWorksSection } from "./sections/HowItWorksSection";
@@ -10,22 +8,6 @@ import { UniqueValuePropositionSection } from "./sections/UniqueValueProposition
 import { Footer } from "./sections/Footer/Footer";
 
 export const WaitList = (): JSX.Element => {
-  // Array of app icons/logos for the "Connect & Manage" section - Updated order as requested
-  const appIcons = [
-    { src: "/Group-8.svg", alt: "Instagram" },
-    { src: "/Group-6.svg", alt: "TikTok" },
-    { src: "/Group-5.svg", alt: "LinkedIn" },
-    { src: "/Group-4.svg", alt: "X (Twitter)" },
-    { src: "/Group 1000004277.svg", alt: "Facebook" },
-    { src: "/Group-3.svg", alt: "Snapchat" },
-    { src: "/Group-2.svg", alt: "YouTube" },
-    { src: "/Group 1000004280.svg", alt: "Google" },
-    { src: "/Group.svg", alt: "Threads" },
-    { src: "/Group-7.svg", alt: "Pinterest" },
-    { src: "/Group 1000004281.svg", alt: "Bluesky" },
-    { src: "/Group-1.svg", alt: "Mastodon" }
-  ];
-
   return (
     <div className="bg-[#e7eefe] flex flex-row justify-center w-full">
       <div className="bg-[#e7eefe] overflow-hidden w-full">
@@ -112,66 +94,16 @@ export const WaitList = (): JSX.Element => {
           <PricingPlansSection />
         </section>
 
-        {/* Spacer before Connect & Manage */}
-        <div className="py-6 md:py-12"></div>
-
-        {/* Connect & Manage Section - Made logos horizontally center aligned - Increased container width by 20% and gaps doubled */}
-        <div className="w-full flex justify-center">
-          <div className="w-full max-w-[1440px] px-4 md:px-6">
-            <Card className="w-full bg-[#f0fdfd80] rounded-[20px] md:rounded-[30px] border-[#cde2e1]">
-              <CardContent className="p-8 md:p-[72px]">
-                <div className="flex flex-col items-center gap-6 md:gap-[37px]">
-                  <h2 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[28px] md:text-[40px] text-center leading-[40px] md:leading-[55px]">
-                    Connect & Manage Them All In One Chat
-                  </h2>
-
-                  {/* Mobile: 2 rows, Desktop: single row */}
-                  <div className="w-full max-w-[660px] md:max-w-[924px] bg-[#f3f8f780] rounded-[44px] md:rounded-[73px] border-[0.73px] border-solid border-[#cde2e1] overflow-hidden mx-auto">
-                    {/* Mobile: Grid layout with 2 rows */}
-                    <div className="md:hidden grid grid-cols-6 gap-3 p-4">
-                      {appIcons.map((icon, index) => (
-                        <div
-                          key={index}
-                          className="relative w-[31px] h-[31px] flex-shrink-0 flex items-center justify-center"
-                        >
-                          <img
-                            className="w-full h-full object-contain"
-                            alt={icon.alt}
-                            src={icon.src}
-                          />
-                        </div>
-                      ))}
-                    </div>
-
-                    {/* Desktop: Flex layout with single row */}
-                    <div className="hidden md:flex items-center justify-center gap-[26px] h-[94px] px-[32px]">
-                      {appIcons.map((icon, index) => (
-                        <div
-                          key={index}
-                          className="relative w-[44px] h-[44px] flex-shrink-0"
-                        >
-                          <img
-                            className="w-full h-full object-contain"
-                            alt={icon.alt}
-                            src={icon.src}
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-
         {/* Spacer before Final CTA */}
-        <div className="py-5 md:py-10"></div>
+        <div className="py-6 md:py-12"></div>
 
         {/* Final Call to Action Section */}
         <section id="early-access">
           <FinalCallToActionSection />
         </section>
+
+        {/* Spacer after Final CTA */}
+        <div className="py-5 md:py-10"></div>
 
         {/* Zendo Footer Image - Increased by 30% (from 702px to 913px max-width) */}
         <div className="w-full flex justify-center px-4">
