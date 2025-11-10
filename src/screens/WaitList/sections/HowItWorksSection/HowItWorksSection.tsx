@@ -3,17 +3,17 @@ import { Button } from "../../../../components/ui/button";
 import { Card } from "../../../../components/ui/card";
 import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 
+const texts = [
+  'Add new product: "Leather tote — 3 colors, $120, upload photos, set inventory 50."',
+  'Launch flash sale: "Start 48-hour 20% off sitewide, schedule for Saturday noon."',
+  'Build landing page: "Create a minimalist collection page for spring drop with email sign-up."',
+  'Process orders: "Fulfill all pending orders from yesterday and send shipping updates."',
+  'Run campaign: "Create 3 Instagram posts + captions for this week and schedule them."',
+];
+
 export const HowItWorksSection = (): JSX.Element => {
   const [sectionRef, sectionVisible] = useScrollAnimation(0.2);
   const [cardRef, cardVisible] = useScrollAnimation(0.3);
-
-  const texts = [
-    'Add new product: "Leather tote — 3 colors, $120, upload photos, set inventory 50."',
-    'Launch flash sale: "Start 48-hour 20% off sitewide, schedule for Saturday noon."',
-    'Build landing page: "Create a minimalist collection page for spring drop with email sign-up."',
-    'Process orders: "Fulfill all pending orders from yesterday and send shipping updates."',
-    'Run campaign: "Create 3 Instagram posts + captions for this week and schedule them."',
-  ];
 
   const [typedText, setTypedText] = useState("");
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -23,30 +23,31 @@ export const HowItWorksSection = (): JSX.Element => {
     if (!isTyping) return;
 
     const currentText = texts[currentTextIndex];
-    const typeText = () => {
-      let currentIndex = 0;
-      const interval = setInterval(() => {
-        if (currentIndex <= currentText.length) {
-          setTypedText(currentText.slice(0, currentIndex));
-          currentIndex++;
-        } else {
-          clearInterval(interval);
-          setIsTyping(false);
-          // Wait, then move to next text
-          setTimeout(() => {
-            setTypedText("");
-            setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-            setIsTyping(true);
-          }, 3000);
-        }
-      }, 50); // Typing speed
+    let currentIndex = 0;
+    let typingInterval: NodeJS.Timeout;
+    let pauseTimeout: NodeJS.Timeout;
 
-      return () => clearInterval(interval);
+    typingInterval = setInterval(() => {
+      if (currentIndex <= currentText.length) {
+        setTypedText(currentText.slice(0, currentIndex));
+        currentIndex++;
+      } else {
+        clearInterval(typingInterval);
+        setIsTyping(false);
+        // Wait, then move to next text
+        pauseTimeout = setTimeout(() => {
+          setTypedText("");
+          setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+          setIsTyping(true);
+        }, 3000);
+      }
+    }, 50); // Typing speed
+
+    return () => {
+      clearInterval(typingInterval);
+      clearTimeout(pauseTimeout);
     };
-
-    const cleanup = typeText();
-    return cleanup;
-  }, [isTyping, currentTextIndex, texts]);
+  }, [isTyping, currentTextIndex]);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
