@@ -51,7 +51,7 @@ export const Footer = (): JSX.Element => {
               onClick={scrollToTop}
             />
             <p className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-sm md:text-base leading-6 max-w-md">
-              ZenShifu is a chat-first AI that automates your social media management so you save time, grow fast, and stay Zen.
+            ZenShifu is your smartest chat-first AI assistant that builds and runs your online store so you launch faster, sell more, outbuild ordinary and stay Zen.
             </p>
             
             {/* Social media icons - Updated with Instagram and YouTube */}

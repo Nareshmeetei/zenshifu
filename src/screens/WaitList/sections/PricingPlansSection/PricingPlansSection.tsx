@@ -7,8 +7,8 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 // Define plan data for reusability
 const pricingPlans = [
   {
-    name: "The 200 Club",
-    description: "Lifetime access for just $99. No subscriptions. No hidden fees. Only 200 seats.",
+    name: "The 300 Club",
+    description: "Lifetime access for just $99. No subscriptions. No hidden fees. Only 300 seats.",
     price: "$99",
     paymentLink: "https://checkout.dodopayments.com/buy/pdt_hXTdqrKtCrwR2jDdPLtPa?quantity=1",
     features: [

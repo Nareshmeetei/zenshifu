@@ -7,16 +7,20 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 // Define the feature data for mapping
 const features = [
   {
-    title: "All-in-One Genius:",
-    description: "Design, products, marketing, analytics—all in one chat.",
+    title: "One Chat, Full Control:",
+    description: "Build, sell, and manage everything in one place.",
   },
   {
-    title: "Luxury Look by Default:",
-    description: "Your store looks premium from day one, no designer needed.",
+    title: "Looks Premium by Default:",
+    description: "No designer, no code, it just looks right.",
   },
   {
-    title: "Speed That Stuns:",
-    description: "Launch faster than others can pick a theme.",
+    title: "Built Fast, Runs Smarter:",
+    description: "Launch in minutes, not weeks.",
+  },
+  {
+    title: "Less Stress, More Sales:",
+    description: "Focus on growth, not tech chaos.",
   },
 ];
 
@@ -93,10 +97,10 @@ export const UniqueValuePropositionSection = (): JSX.Element => {
 
               <Button
                 onClick={() => scrollToSection('#pricing')}
-                className="w-full max-w-[237px] h-[50px] md:h-[55px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
+                className="w-full max-w-[300px] h-[50px] md:h-[55px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
               >
                 <span className="font-['Sora',Helvetica] font-medium text-base">
-                  Join the Waitlist
+                  Join Waitlist to Outbuild
                 </span>
               </Button>
             </CardContent>

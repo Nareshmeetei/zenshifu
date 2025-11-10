@@ -3,9 +3,10 @@ import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 
 // Data for pain points to enable mapping
 const painPoints = [
-  "No coding, no learning curve",
-  "AI handles design, products, orders, and campaigns",
-  "You stay focused on your vision",
+  "You waste days just setting things up.",
+  "People visit your store, but no one buys.",
+  "Others launch faster and steal your customers.",
+  "You spend more time wrestling with tools than selling.",
 ];
 
 export const ProblemOverviewSection = (): JSX.Element => {
@@ -24,12 +25,11 @@ export const ProblemOverviewSection = (): JSX.Element => {
           >
             <div className="flex flex-col items-start gap-4 md:gap-[22px] w-full">
               <h2 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[28px] md:text-[40px] leading-[40px] md:leading-[55px] transition-all duration-1200 ease-out">
-                Old eCommerce Feels Like Dial-Up.
+              You’re Losing Time. You’re Losing Sales.
               </h2>
 
               <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base leading-6 transition-all duration-1000 ease-out delay-200">
-                Still clicking through endless menus, themes, and settings?<br />
-                ZenShifu kills that chaos. It builds, designs, markets, and manages your store in one chat.
+              If your tool takes days to learn or using older ones, here’s what’s really happening...
               </p>
             </div>
 

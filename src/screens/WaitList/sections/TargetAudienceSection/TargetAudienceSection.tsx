@@ -12,35 +12,35 @@ export const TargetAudienceSection = (): JSX.Element => {
   const audienceData = [
     {
       id: 1,
-      title: "Agencies",
-      description: "Deliver elite stores in hours, not weeks.",
-      iconSrc: "/Agencies icon.png",
-      iconWidth: "133px",
-      iconHeight: "185px",
-    },
-    {
-      id: 2,
-      title: "Solopreneurs",
-      description: "Build fast, look premium, sell confidently.",
+      title: "D2C Brands",
+      description: "Build strong brand, look premium, sell fast.",
       iconSrc: "/Solopreneures icon.png",
       iconWidth: "174px",
       iconHeight: "154px",
     },
     {
-      id: 3,
-      title: "Teams",
+      id: 2,
+      title: "Lean Startups",
       description: "Manage and scale without tech debt.",
       iconSrc: "/Teams icon.png",
       iconWidth: "155px",
       iconHeight: "166px",
     },
     {
-      id: 4,
+      id: 3,
       title: "Creators",
       description: "Turn ideas into brands without touching code.",
       iconSrc: "/Creators icon.png",
       iconWidth: "169px",
       iconHeight: "173px",
+    },
+    {
+      id: 4,
+      title: "Agencies",
+      description: "Deliver elite stores in hours, not weeks.",
+      iconSrc: "/Agencies icon.png",
+      iconWidth: "133px",
+      iconHeight: "185px",
     },
   ];
 
@@ -63,8 +63,11 @@ export const TargetAudienceSection = (): JSX.Element => {
             }`}
           >
             <h2 className="font-medium text-[28px] md:text-[40px] text-[#2c2c2c] text-center leading-[40px] md:leading-[55px] [font-family:'Besley',Helvetica] transition-all duration-1200 ease-out">
-              Built for the Quiet Rebels
+            Built for Modern SMBs Who Move Fast
             </h2>
+            <p className="text-[#5e5e5e] text-base text-center leading-6 [font-family:'Sora',Helvetica] transition-all duration-1000 ease-out delay-200">
+              Launch faster. Scale smarter. No tech overhead.
+            </p>
           </div>
 
           <div 
@@ -120,7 +123,7 @@ export const TargetAudienceSection = (): JSX.Element => {
             }`}
           >
             <span className="[font-family:'Sora',Helvetica] font-medium text-base">
-              Join the Waitlist
+              Join Waitlist to Outbuild
             </span>
           </Button>
         </div>

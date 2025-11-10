@@ -65,8 +65,7 @@ export const HowItWorksSection = (): JSX.Element => {
           </h2>
 
           <p className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-base text-center leading-6 transition-all duration-1000 ease-out delay-200">
-            Every command turns into progress. Every idea becomes a polished brand.<br />
-            ZenShifu makes creation effortless—and execution automatic.
+          This is how you’ll build and run your store. Just chat your command, ZenShifu handles everything.
           </p>
         </div>
 
@@ -113,7 +112,7 @@ export const HowItWorksSection = (): JSX.Element => {
             className="w-full max-w-[351px] h-[60px] md:h-[70px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
           >
             <span className="[font-family:'Sora',Helvetica] font-medium text-base">
-              Join the Waitlist
+            Join Waitlist to Outbuild
             </span>
           </Button>
         </div>

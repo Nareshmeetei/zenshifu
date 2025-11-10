@@ -160,10 +160,10 @@ export const HeroSection = (): JSX.Element => {
           >
             <div className="flex flex-col items-center gap-4 md:gap-[25px] w-full">
               <h1 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[87px] w-full transition-all duration-1200 ease-out">
-                Build Online Stores Like You&apos;re Texting
+                Build Stores Like You&apos;re Texting
               </h1>
               <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base md:text-lg text-center leading-6 max-w-[797px] transition-all duration-1000 ease-out delay-200">
-              AI that builds and runs your online store just by chatting. Premium, fast, effortless.
+              The smartest, chat-first AI assistant to build and run your online store effortlessly. Built for SMBs to launch, sell, and manage easier and outbuild ordinary.
               </p>
             </div>
 
