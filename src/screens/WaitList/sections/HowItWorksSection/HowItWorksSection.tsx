@@ -4,6 +4,7 @@ import { Card } from "../../../../components/ui/card";
 import { useScrollAnimation } from "../../../../hooks/useScrollAnimation";
 
 const texts = [
+  'Schedule a LinkedIn post Friday at 10am: Behind-the-scenes product shot 👀',
   'Add new product: "Leather tote — 3 colors, $120, upload photos, set inventory 50."',
   'Launch flash sale: "Start 48-hour 20% off sitewide, schedule for Saturday noon."',
   'Build landing page: "Create a minimalist collection page for spring drop with email sign-up."',
