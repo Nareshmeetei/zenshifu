@@ -17,37 +17,31 @@ export const HowItWorksSection = (): JSX.Element => {
 
   const [typedText, setTypedText] = useState("");
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isTyping, setIsTyping] = useState(true);
 
   useEffect(() => {
-    if (!isTyping) return;
-
     const currentText = texts[currentTextIndex];
     let currentIndex = 0;
-    let typingInterval: NodeJS.Timeout;
-    let pauseTimeout: NodeJS.Timeout;
 
-    typingInterval = setInterval(() => {
+    const typingInterval = setInterval(() => {
       if (currentIndex <= currentText.length) {
         setTypedText(currentText.slice(0, currentIndex));
         currentIndex++;
       } else {
         clearInterval(typingInterval);
-        setIsTyping(false);
-        // Wait, then move to next text
-        pauseTimeout = setTimeout(() => {
-          setTypedText("");
-          setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-          setIsTyping(true);
-        }, 3000);
       }
     }, 50); // Typing speed
 
+    // Set timeout to move to next text after typing finishes
+    const nextTextTimeout = setTimeout(() => {
+      setTypedText("");
+      setCurrentTextIndex((prev) => (prev + 1) % texts.length);
+    }, currentText.length * 50 + 3000); // typing time + pause time
+
     return () => {
       clearInterval(typingInterval);
-      clearTimeout(pauseTimeout);
+      clearTimeout(nextTextTimeout);
     };
-  }, [isTyping, currentTextIndex]);
+  }, [currentTextIndex]);
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
