@@ -141,7 +141,7 @@ export const PricingPlansSection = (): JSX.Element => {
 
           <div 
             ref={guaranteeRef}
-            className={`w-full max-w-[617px] h-[50px] md:h-[60px] bg-[#e2ffd7] rounded-[100px] border-[3px] md:border-[5px] border-[#cde2e1] flex items-center justify-center transition-all duration-300 ease-out ${
+            className={`w-full max-w-[617px] h-[70px] md:h-[60px] bg-[#e2ffd7] rounded-[100px] border-[3px] md:border-[5px] border-[#cde2e1] flex items-center justify-center transition-all duration-300 ease-out ${
               guaranteeVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >
