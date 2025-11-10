@@ -32,21 +32,15 @@ export const FinalCallToActionSection = (): JSX.Element => {
       >
         <div className="flex flex-col items-center gap-6 md:gap-[33px] w-full max-w-[1071px]">
           <h2 className="font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[76px] [font-family:'Besley',Helvetica] w-full transition-all duration-1200 ease-out">
-            Less Setup. More Selling.
+            Outbuild Ordinary. Stay Zen.
           </h2>
 
           <p className="[font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-lg md:text-xl text-center leading-6 w-full transition-all duration-1000 ease-out delay-200">
-            While others tweak menus, you&apos;re already making sales.<br />
-            ZenShifu gives you time, taste, and total control—without the grind.
+          While others wrestle with setup and countless plugins, you're already selling, growing and outbuilding.
           </p>
         </div>
 
         <div className="flex flex-col w-full max-w-[853px] items-center gap-8 md:gap-[49px]">
-          <div className="flex items-center justify-center w-full px-4">
-            <p className="[font-family:'Sora',Helvetica] font-normal text-[#7b7b7b] text-sm md:text-base text-center leading-6 transition-all duration-1000 ease-out delay-400">
-              More Zen. More Wins. Outbuild Ordinary.
-            </p>
-          </div>
 
           {/* Email form - stacked on mobile, inline on desktop */}
           <div className="w-full max-w-[605px]">
@@ -67,7 +61,7 @@ export const FinalCallToActionSection = (): JSX.Element => {
                   disabled={isLoading || !email.trim()}
                   className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#057067] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
                 >
-                  {isLoading ? 'Joining...' : 'Join Waitlist'}
+                  {isLoading ? 'Joining...' : 'Join Waitlist to Outbuild'}
                 </Button>
               </div>
             </form>
