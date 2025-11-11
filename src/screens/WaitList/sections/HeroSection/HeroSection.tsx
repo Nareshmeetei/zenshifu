@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Button } from "../../../../components/ui/button";
 import { Input } from "../../../../components/ui/input";
 import { Toast } from "../../../../components/ui/toast";
@@ -14,6 +14,26 @@ export const HeroSection = (): JSX.Element => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { signupForWaitlist, isLoading, message, clearMessage } = useWaitlistSignup();
   const { isScrolled } = useScrollPosition();
+
+  // Heading animation state
+  const [currentHeadingIndex, setCurrentHeadingIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+  const headings = [
+    { text: "Build Stores Like You're Texting", isTwoLines: false },
+    { text: "Outbuild", secondLine: "Ordinary", isTwoLines: true }
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFading(true);
+      setTimeout(() => {
+        setCurrentHeadingIndex((prev) => (prev + 1) % headings.length);
+        setIsFading(false);
+      }, 1000); // Wait 1s for fade out before switching
+    }, 5000); // Change every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [headings.length]);
 
   // Navigation links data - updated "Waitlist Offer Pricing" to "Waitlist Offer Price"
   const navLinks = [
@@ -159,8 +179,18 @@ export const HeroSection = (): JSX.Element => {
             }`}
           >
             <div className="flex flex-col items-center gap-4 md:gap-[25px] w-full">
-              <h1 className="font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[87px] w-full transition-all duration-1200 ease-out">
-                Build Stores Like You&apos;re Texting
+              <h1 className={`font-['Besley',Helvetica] font-medium text-[#2c2c2c] text-[40px] md:text-[70px] text-center leading-[50px] md:leading-[87px] w-full transition-opacity duration-1000 ease-in-out ${
+                isFading ? 'opacity-0' : 'opacity-100'
+              }`}>
+                {headings[currentHeadingIndex].isTwoLines ? (
+                  <>
+                    {headings[currentHeadingIndex].text}
+                    <br />
+                    {headings[currentHeadingIndex].secondLine}
+                  </>
+                ) : (
+                  headings[currentHeadingIndex].text
+                )}
               </h1>
               <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base md:text-lg text-center leading-6 max-w-[797px] transition-all duration-1000 ease-out delay-200">
               The smartest, chat-first AI assistant to build and run your online store effortlessly. Built for SMBs to launch, sell, and manage easier and outbuild ordinary.
