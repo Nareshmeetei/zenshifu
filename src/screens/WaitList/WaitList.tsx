@@ -51,13 +51,7 @@ export const WaitList = (): JSX.Element => {
         <div className="w-full py-4 md:py-8 flex justify-center">
           <div className="relative w-full max-w-[1440px] flex justify-center px-4 md:px-6">
             <div className="relative flex justify-center">
-              <img
-                className="w-full max-w-[600px] md:max-w-[927px] h-auto"
-                alt="Group 12"
-                src="/group-12.png"
-              />
-
-              <div className="absolute w-full max-w-[640px] md:max-w-[983px] h-auto top-[15%] md:top-[141px] left-1/2 transform -translate-x-1/2">
+              <div className="w-full max-w-[640px] md:max-w-[983px] h-auto top-[15%] md:top-[141px] left-1/2 transform -translate-x-1/2">
                 <div className="flex flex-col md:flex-row items-center justify-center absolute top-0 left-1/2 transform -translate-x-1/2 w-full px-4">
                   {/* Text reduced by 10% */}
                   <div className="relative w-full max-w-[270px] md:max-w-[452px] font-['Besley',Helvetica] font-medium text-[#041c21] text-[22px] md:text-[36px] tracking-[0] leading-[32px] md:leading-[55px] text-center md:text-left mb-4 md:mb-0">
