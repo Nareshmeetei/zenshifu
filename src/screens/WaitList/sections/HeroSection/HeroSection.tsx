@@ -113,13 +113,6 @@ export const HeroSection = (): JSX.Element => {
       </div>
       
       <div className="relative w-full min-h-[800px] md:min-h-[1662px]">
-        {/* Background image with floating animation - 3D Zen Bolt at 40% opacity */}
-        <img
-          className="absolute w-full h-[600px] md:h-[950px] top-0 left-0 object-cover transition-opacity duration-1000 ease-out animate-float-gentle opacity-40"
-          alt="3D Zen Bolt Background"
-          src="/3d-zen-bolt.png"
-        />
-
         {/* Colorful gradient blurs with animation - set to 75% opacity */}
         <div className="absolute w-48 md:w-72 h-48 md:h-72 top-[200px] md:top-[368px] right-[25px] md:right-[50px] bg-[#1af3f2bf] rounded-[72px] md:rounded-[144px] blur-[100px] md:blur-[200px] animate-pulse" />
         <div className="absolute w-[120px] md:w-[220px] h-[120px] md:h-[220px] top-[-80px] md:top-[-156px] right-[100px] md:right-[200px] bg-[#eba7d2bf] rounded-[60px] md:rounded-[110px] blur-[65px] md:blur-[125px] animate-pulse" />
