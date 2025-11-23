@@ -77,7 +77,7 @@ export const HowItWorksSection = (): JSX.Element => {
         >
           <div className="absolute w-full max-w-[600px] md:max-w-[699px] top-4 md:top-7 left-4 md:left-[29px] [font-family:'Sora',Helvetica] font-normal text-[#5e5e5e] text-[14px] md:text-[18.1px] leading-[20px] md:leading-[25.5px] pr-4">
             {typedText}
-            <span className="animate-pulse text-[#057067] transition-opacity duration-300">|</span>
+            <span className="animate-pulse text-[#06645C] transition-opacity duration-300">|</span>
           </div>
 
           {/* Plus icon */}
@@ -97,9 +97,9 @@ export const HowItWorksSection = (): JSX.Element => {
           </div>
 
           {/* Arrow up icon with green background */}
-          <div className="absolute w-[30px] md:w-[43px] h-[30px] md:h-[43px] bottom-4 md:bottom-[17px] right-4 md:right-6 bg-[#b5ff99] rounded-[15px] md:rounded-[106.45px] overflow-hidden border-[1.06px] border-solid border-[#bababa] flex items-center justify-center transition-all duration-300 ease-out cursor-pointer">
+          <div className="absolute w-[30px] md:w-[43px] h-[30px] md:h-[43px] bottom-4 md:bottom-[17px] right-4 md:right-6 bg-[#71FFE3] rounded-[15px] md:rounded-[106.45px] overflow-hidden border-[1.06px] border-solid border-[#bababa] flex items-center justify-center transition-all duration-300 ease-out cursor-pointer">
             <svg className="w-[18px] md:w-[26px] h-[18px] md:h-[26px] transition-transform duration-300" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7 14L12 9L17 14" stroke="#057067" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              <path d="M7 14L12 9L17 14" stroke="#06645C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </div>
         </Card>
@@ -109,7 +109,7 @@ export const HowItWorksSection = (): JSX.Element => {
         }`}>
           <Button
             onClick={() => scrollToSection('#pricing')}
-            className="w-full max-w-[351px] h-[60px] md:h-[70px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
+            className="w-full max-w-[351px] h-[60px] md:h-[70px] bg-[#06645C] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
           >
             <span className="[font-family:'Sora',Helvetica] font-medium text-base">
             Join Waitlist to Outbuild

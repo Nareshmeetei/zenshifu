@@ -96,7 +96,7 @@ export const Footer = (): JSX.Element => {
                 <li key={index}>
                   <button
                     onClick={() => scrollToSection(link.href)}
-                    className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-sm md:text-base hover:text-[#b5ff99] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer bg-transparent border-none text-left"
+                    className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-sm md:text-base hover:text-[#71FFE3] hover:-translate-y-0.5 transition-all duration-300 cursor-pointer bg-transparent border-none text-left"
                   >
                     {link.title}
                   </button>
@@ -137,7 +137,7 @@ export const Footer = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="bg-[#057067] hover:bg-[#0a8a7d] text-white px-10 py-3 rounded-full font-['Sora',Helvetica] font-medium text-base transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed h-full whitespace-nowrap"
+                  className="bg-[#06645C] hover:bg-[#0a8a7d] text-white px-10 py-3 rounded-full font-['Sora',Helvetica] font-medium text-base transition-all duration-300 border-none disabled:bg-[#06645C] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed h-full whitespace-nowrap"
                 >
                   {isLoading ? 'Sending...' : 'Send Me the Good Vibes'}
                 </Button>
@@ -162,7 +162,7 @@ export const Footer = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="w-full h-[50px] bg-[#057067] hover:bg-[#0a8a7d] text-white rounded-[25px] font-['Sora',Helvetica] font-medium text-sm transition-all duration-300 border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed"
+                  className="w-full h-[50px] bg-[#06645C] hover:bg-[#0a8a7d] text-white rounded-[25px] font-['Sora',Helvetica] font-medium text-sm transition-all duration-300 border-none disabled:bg-[#06645C] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed"
                 >
                   {isLoading ? 'Sending...' : 'Subscribe'}
                 </Button>
@@ -184,7 +184,7 @@ export const Footer = (): JSX.Element => {
                   href="https://www.hayoomdesign.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="hover:text-[#b5ff99] hover:-translate-y-0.5 transition-all duration-300 underline decoration-transparent hover:decoration-[#b5ff99]"
+                  className="hover:text-[#71FFE3] hover:-translate-y-0.5 transition-all duration-300 underline decoration-transparent hover:decoration-[#71FFE3]"
                 >
                   Hayoom Design
                 </a>
@@ -195,13 +195,13 @@ export const Footer = (): JSX.Element => {
             <div className="flex items-center gap-6 md:gap-8">
               <a
                 href="#"
-                className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-xs md:text-sm hover:text-[#b5ff99] hover:-translate-y-0.5 transition-all duration-300"
+                className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-xs md:text-sm hover:text-[#71FFE3] hover:-translate-y-0.5 transition-all duration-300"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-xs md:text-sm hover:text-[#b5ff99] hover:-translate-y-1 transition-all duration-300"
+                className="font-['Sora',Helvetica] font-normal text-[#a0b3b8] text-xs md:text-sm hover:text-[#71FFE3] hover:-translate-y-1 transition-all duration-300"
               >
                 Terms of Service
               </a>

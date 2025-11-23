@@ -83,8 +83,8 @@ export const UniqueValuePropositionSection = (): JSX.Element => {
                       }`}
                       style={{ transitionDelay: `${400 + index * 100}ms` }}
                     >
-                      <div className="w-[18px] h-[18px] mt-1.5 bg-[#b5ff99] rounded-[54.28px] flex items-center justify-center transition-all duration-300 ease-out">
-                        <CheckIcon className="w-[13px] h-[13px] text-[#057067] transition-transform duration-300" />
+                      <div className="w-[18px] h-[18px] mt-1.5 bg-[#71FFE3] rounded-[54.28px] flex items-center justify-center transition-all duration-300 ease-out">
+                        <CheckIcon className="w-[13px] h-[13px] text-[#06645C] transition-transform duration-300" />
                       </div>
                       <span className="font-['Sora',Helvetica] text-[#5e5e5e] text-base leading-[31px] transition-colors duration-300 ease-out">
                         <span className="font-semibold">{feature.title}</span>
@@ -97,7 +97,7 @@ export const UniqueValuePropositionSection = (): JSX.Element => {
 
               <Button
                 onClick={() => scrollToSection('#pricing')}
-                className="w-full max-w-[300px] h-[50px] md:h-[55px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
+                className="w-full max-w-[300px] h-[50px] md:h-[55px] bg-[#06645C] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none"
               >
                 <span className="font-['Sora',Helvetica] font-medium text-base">
                   Join Waitlist to Outbuild

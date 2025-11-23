@@ -118,7 +118,7 @@ export const TargetAudienceSection = (): JSX.Element => {
           <Button
             ref={buttonRef}
             onClick={() => scrollToSection('#pricing')}
-            className={`w-full max-w-[500px] h-[60px] md:h-[70px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-500 ease-out border-none px-8 md:px-12 ${
+            className={`w-full max-w-[500px] h-[60px] md:h-[70px] bg-[#06645C] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-500 ease-out border-none px-8 md:px-12 ${
               buttonVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
           >

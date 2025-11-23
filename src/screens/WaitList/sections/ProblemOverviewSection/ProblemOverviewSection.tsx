@@ -42,9 +42,9 @@ export const ProblemOverviewSection = (): JSX.Element => {
                   }`}
                   style={{ transitionDelay: `${300 + index * 100}ms` }}
                 >
-                  <div className="w-4 h-4 mt-[7px] bg-[#b5ff99] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ease-out">
+                  <div className="w-4 h-4 mt-[7px] bg-[#F75252] rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300 ease-out">
                     <svg
-                      className="w-2.5 h-2.5 text-[#057067]"
+                      className="w-2.5 h-2.5 text-white"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -53,7 +53,7 @@ export const ProblemOverviewSection = (): JSX.Element => {
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        d="M5 13l4 4L19 7"
+                        d="M6 18L18 6M6 6l12 12"
                       />
                     </svg>
                   </div>
@@ -72,7 +72,7 @@ export const ProblemOverviewSection = (): JSX.Element => {
             }`}
           >
             {/* Only one green circle positioned at the top */}
-            <div className="w-[60px] md:w-[88px] h-[60px] md:h-[88px] top-0 left-0 rounded-[30px] md:rounded-[44px] absolute bg-[#b5ff99] transition-all duration-500 ease-out z-0" />
+            <div className="w-[60px] md:w-[88px] h-[60px] md:h-[88px] top-0 left-0 rounded-[30px] md:rounded-[44px] absolute bg-[#71FFE3] transition-all duration-500 ease-out z-0" />
             <img
               className="w-full h-auto transition-all duration-500 ease-out relative z-10"
               alt="Social media chaos illustration"

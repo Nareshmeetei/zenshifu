@@ -82,7 +82,7 @@ export const HeroSection = (): JSX.Element => {
                 <button
                   key={index}
                   onClick={() => scrollToSection(link.href)}
-                  className="font-['Sora',Helvetica] font-normal text-[#616161] text-sm leading-6 transition-all duration-300 ease-out hover:opacity-80 hover:text-[#057067] hover:-translate-y-0.5 cursor-pointer bg-transparent border-none whitespace-nowrap"
+                  className="font-['Sora',Helvetica] font-normal text-[#616161] text-sm leading-6 transition-all duration-300 ease-out hover:opacity-80 hover:text-[#06645C] hover:-translate-y-0.5 cursor-pointer bg-transparent border-none whitespace-nowrap"
                 >
                   {link.title}
                 </button>
@@ -93,7 +93,7 @@ export const HeroSection = (): JSX.Element => {
             <Button
               variant="outline"
               onClick={() => scrollToSection('#pricing')}
-              className="hidden sm:flex rounded-[50px] md:rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-3 md:px-6 py-2 md:py-2.75 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-xs md:text-sm whitespace-nowrap"
+              className="hidden sm:flex rounded-[50px] md:rounded-[100px] border-2 border-[#06645C] text-[#06645C] font-['Sora',Helvetica] font-medium px-3 md:px-6 py-2 md:py-2.75 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-xs md:text-sm whitespace-nowrap"
             >
               <span className="hidden sm:inline">Join Waitlist</span>
               <span className="sm:hidden">Join</span>
@@ -102,9 +102,9 @@ export const HeroSection = (): JSX.Element => {
             {/* Mobile Hamburger Menu */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="sm:hidden w-8 h-8 flex items-center justify-center rounded-lg border-2 border-[#057067] hover:bg-[#057067] hover:text-white transition-all duration-300 ease-out"
+              className="sm:hidden w-8 h-8 flex items-center justify-center rounded-lg border-2 border-[#06645C] hover:bg-[#06645C] hover:text-white transition-all duration-300 ease-out"
             >
-              <svg className="w-5 h-5 text-[#057067] hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[#06645C] hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
@@ -134,7 +134,7 @@ export const HeroSection = (): JSX.Element => {
                 <button
                   key={index}
                   onClick={() => scrollToSection(link.href)}
-                  className="font-['Sora',Helvetica] font-normal text-[#616161] text-base leading-6 transition-all duration-300 ease-out hover:opacity-80 hover:text-[#057067] hover:-translate-y-0.5 cursor-pointer bg-transparent border-none"
+                  className="font-['Sora',Helvetica] font-normal text-[#616161] text-base leading-6 transition-all duration-300 ease-out hover:opacity-80 hover:text-[#06645C] hover:-translate-y-0.5 cursor-pointer bg-transparent border-none"
                 >
                   {link.title}
                 </button>
@@ -145,7 +145,7 @@ export const HeroSection = (): JSX.Element => {
             <Button
               variant="outline"
               onClick={() => scrollToSection('#pricing')}
-              className="hidden sm:flex rounded-[100px] border-2 border-[#057067] text-[#057067] font-['Sora',Helvetica] font-medium px-4 md:px-6 py-2.2 md:py-3.85 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-sm md:text-base"
+              className="hidden sm:flex rounded-[100px] border-2 border-[#06645C] text-[#06645C] font-['Sora',Helvetica] font-medium px-4 md:px-6 py-2.2 md:py-3.85 bg-transparent hover:opacity-80 hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out text-sm md:text-base"
             >
               Join Waitlist
             </Button>
@@ -153,9 +153,9 @@ export const HeroSection = (): JSX.Element => {
             {/* Mobile Hamburger Menu */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="sm:hidden w-10 h-10 flex items-center justify-center rounded-lg border-2 border-[#057067] hover:bg-[#057067] transition-all duration-300 ease-out group"
+              className="sm:hidden w-10 h-10 flex items-center justify-center rounded-lg border-2 border-[#06645C] hover:bg-[#06645C] transition-all duration-300 ease-out group"
             >
-              <svg className="w-5 h-5 text-[#057067] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-[#06645C] group-hover:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
@@ -206,7 +206,7 @@ export const HeroSection = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#057067] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
+                  className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#06645C] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#06645C] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
                 >
                   {isLoading ? 'Joining...' : 'Join Waitlist to Outbuild'}
                 </Button>
@@ -226,7 +226,7 @@ export const HeroSection = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="w-full h-[50px] bg-[#057067] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
+                  className="w-full h-[50px] bg-[#06645C] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#06645C] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
                 >
                   {isLoading ? 'Joining...' : 'Join Waitlist to Outbuild'}
                 </Button>
@@ -244,7 +244,7 @@ export const HeroSection = (): JSX.Element => {
               imageVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
             }`}
             alt="ZenShifu Product Interface"
-            src="/Product image.png"
+            src="/product-mockup.png"
           />
         </div>
       </div>

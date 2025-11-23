@@ -76,7 +76,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
               <button
                 key={index}
                 onClick={() => handleNavigate(link.href)}
-                className="block w-full text-left font-['Sora',Helvetica] font-normal text-[#616161] text-lg leading-6 hover:text-[#057067] hover:translate-x-2 transition-all duration-300 ease-out py-2"
+                className="block w-full text-left font-['Sora',Helvetica] font-normal text-[#616161] text-lg leading-6 hover:text-[#06645C] hover:translate-x-2 transition-all duration-300 ease-out py-2"
               >
                 {link.title}
               </button>
@@ -88,7 +88,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
         <div className="absolute bottom-8 left-6 right-6">
           <Button
             onClick={() => handleNavigate('#pricing')}
-            className="w-full h-[50px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none font-['Sora',Helvetica] font-medium text-base"
+            className="w-full h-[50px] bg-[#06645C] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg transition-all duration-300 ease-out border-none font-['Sora',Helvetica] font-medium text-base"
           >
             Join Waitlist
           </Button>

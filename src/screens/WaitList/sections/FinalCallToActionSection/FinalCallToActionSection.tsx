@@ -59,7 +59,7 @@ export const FinalCallToActionSection = (): JSX.Element => {
                 <Button 
                   type="submit"
                   disabled={isLoading || !email.trim()}
-                  className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#057067] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
+                  className="absolute w-[267px] h-[70px] top-[5px] right-[5px] rounded-[100px] bg-[#06645C] text-white font-['Sora',Helvetica] font-medium text-base hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#06645C] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed px-6"
                 >
                   {isLoading ? 'Joining...' : 'Join Waitlist to Outbuild'}
                 </Button>
@@ -80,7 +80,7 @@ export const FinalCallToActionSection = (): JSX.Element => {
               <Button
                 type="submit"
                 disabled={isLoading || !email.trim()}
-                className="w-full h-[50px] bg-[#057067] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#057067] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
+                className="w-full h-[50px] bg-[#06645C] text-white rounded-[25px] hover:bg-[#0a8a7d] hover:shadow-lg transition-all duration-300 ease-out border-none disabled:bg-[#06645C] disabled:opacity-100 disabled:text-white disabled:cursor-not-allowed font-['Sora',Helvetica] font-medium text-sm"
               >
                 {isLoading ? 'Joining...' : 'Join Waitlist'}
               </Button>

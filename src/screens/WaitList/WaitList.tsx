@@ -64,7 +64,7 @@ export const WaitList = (): JSX.Element => {
               <div className="relative w-full md:w-1/2 flex justify-center md:justify-end">
                 <div className="relative">
                   {/* Green circle behind cat */}
-                  <div className="absolute w-[60px] md:w-[100px] h-[60px] md:h-[100px] top-0 left-[20%] bg-[#b5ff99] rounded-full" />
+                  <div className="absolute w-[60px] md:w-[100px] h-[60px] md:h-[100px] top-0 left-[20%] bg-[#71FFE3] rounded-full" />
 
                   {/* Cat image */}
                   <img
@@ -74,7 +74,7 @@ export const WaitList = (): JSX.Element => {
                   />
 
                   {/* Shadow below cat */}
-                  <div className="absolute w-[150px] md:w-[200px] h-[12px] md:h-[16px] bottom-[-20px] left-1/2 transform -translate-x-1/2 bg-[#05706733] rounded-[75px/8px] blur-[10px]" />
+                  <div className="absolute w-[150px] md:w-[200px] h-[12px] md:h-[16px] bottom-[-20px] left-1/2 transform -translate-x-1/2 bg-[#06645C33] rounded-[75px/8px] blur-[10px]" />
                 </div>
               </div>
             </div>

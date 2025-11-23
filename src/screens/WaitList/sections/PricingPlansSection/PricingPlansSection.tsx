@@ -79,7 +79,7 @@ export const PricingPlansSection = (): JSX.Element => {
                         </div>
 
                         <div className="relative">
-                          <span className="font-semibold text-[36px] md:text-[45px] text-[#057067] leading-[40px] md:leading-[55px] [font-family:'Besley',Helvetica] transition-all duration-300 ease-out">
+                          <span className="font-semibold text-[36px] md:text-[45px] text-[#06645C] leading-[40px] md:leading-[55px] [font-family:'Besley',Helvetica] transition-all duration-300 ease-out">
                             {plan.price}
                           </span>
                           <span className="absolute top-[20px] md:top-[29px] ml-2 text-sm md:text-base text-[#5e5e5e] [font-family:'Sora',Helvetica]">
@@ -90,7 +90,7 @@ export const PricingPlansSection = (): JSX.Element => {
 
                       <Button
                         onClick={() => handlePurchase(plan.paymentLink)}
-                        className="w-full h-[50px] md:h-[58px] bg-[#057067] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg font-medium text-sm md:text-base [font-family:'Sora',Helvetica] transition-all duration-300 ease-out border-none"
+                        className="w-full h-[50px] md:h-[58px] bg-[#06645C] text-white rounded-[100px] hover:bg-[#0a8a7d] hover:-translate-y-1 hover:shadow-lg font-medium text-sm md:text-base [font-family:'Sora',Helvetica] transition-all duration-300 ease-out border-none"
                       >
                         Join the {plan.name}
                       </Button>
@@ -106,8 +106,8 @@ export const PricingPlansSection = (): JSX.Element => {
                             key={featureIndex}
                             className="flex items-start gap-2 transition-all duration-300 ease-out"
                           >
-                            <div className="w-4 h-4 mt-1 bg-[#b5ff99] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
-                              <CheckIcon className="w-3 h-3 text-[#057067]" />
+                            <div className="w-4 h-4 mt-1 bg-[#71FFE3] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
+                              <CheckIcon className="w-3 h-3 text-[#06645C]" />
                             </div>
                             <span className="text-[#7b7b7b] text-sm leading-[28px] [font-family:'Sora',Helvetica] transition-colors duration-300 ease-out">
                               {feature}
@@ -123,8 +123,8 @@ export const PricingPlansSection = (): JSX.Element => {
                             key={featureIndex}
                             className="flex items-start gap-[9px] transition-all duration-300 ease-out"
                           >
-                            <div className="w-[18px] h-[18px] mt-[7px] bg-[#b5ff99] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
-                              <CheckIcon className="w-[13px] h-[13px] text-[#057067]" />
+                            <div className="w-[18px] h-[18px] mt-[7px] bg-[#71FFE3] rounded-full flex items-center justify-center transition-all duration-300 ease-out">
+                              <CheckIcon className="w-[13px] h-[13px] text-[#06645C]" />
                             </div>
                             <span className="text-[#7b7b7b] text-base leading-[34px] [font-family:'Sora',Helvetica] transition-colors duration-300 ease-out">
                               {feature}
