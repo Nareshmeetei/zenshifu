@@ -47,33 +47,34 @@ export const WaitList = (): JSX.Element => {
         {/* Spacer before Zen Cat Section */}
         <div className="py-4 md:py-8"></div>
 
-        {/* Zen Cat Section - Centered with left-aligned text and floating animation - Text reduced by 10% - Only one shadow below image moved up a little bit and to the right */}
-        <div className="w-full py-4 md:py-8 flex justify-center">
-          <div className="relative w-full max-w-[1440px] flex justify-center px-4 md:px-6">
-            <div className="relative flex justify-center">
-              <div className="w-full max-w-[640px] md:max-w-[983px] h-auto top-[15%] md:top-[141px] left-1/2 transform -translate-x-1/2">
-                <div className="flex flex-col md:flex-row items-center justify-center absolute top-0 left-1/2 transform -translate-x-1/2 w-full px-4">
-                  {/* Text reduced by 10% */}
-                  <div className="relative w-full max-w-[270px] md:max-w-[452px] font-['Besley',Helvetica] font-medium text-[#041c21] text-[22px] md:text-[36px] tracking-[0] leading-[32px] md:leading-[55px] text-center md:text-left mb-4 md:mb-0">
-                    More tabs and clicks, you suffer. More Zen, you rise. Stay
-                    Zen!
-                  </div>
+        {/* Zen Cat Section - Break section with text and meditating cat */}
+        <div className="w-full py-12 md:py-20 flex justify-center">
+          <div className="w-full max-w-[1000px] px-6 md:px-12">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
+              {/* Text on left */}
+              <div className="w-full md:w-1/2 mb-8 md:mb-0">
+                <div className="font-['Besley',Helvetica] font-medium text-[#041c21] text-[24px] md:text-[36px] leading-[36px] md:leading-[55px]">
+                  More tabs and clicks,<br />
+                  you suffer. More Zen,<br />
+                  you outbuild. Stay Zen!
+                </div>
+              </div>
 
-                  <div className="relative w-full max-w-[300px] md:max-w-[481.2px] h-auto md:ml-8">
-                    <div className="relative w-full">
-                      <img
-                        className="w-full max-w-[300px] md:max-w-[471px] h-auto animate-float"
-                        alt="Zen Cat Meditation"
-                        src="/Group copy copy.png"
-                      />
+              {/* Cat image on right */}
+              <div className="relative w-full md:w-1/2 flex justify-center md:justify-end">
+                <div className="relative">
+                  {/* Green circle behind cat */}
+                  <div className="absolute w-[60px] md:w-[100px] h-[60px] md:h-[100px] top-0 left-[20%] bg-[#b5ff99] rounded-full" />
 
-                      {/* Only the top green circle */}
-                      <div className="absolute w-[60px] md:w-[116px] h-[60px] md:h-[116px] top-5 md:top-10 left-0 bg-[#b5ff99] rounded-[30px] md:rounded-[58px]" />
-                      
-                      {/* Single blurred circular vector positioned upward and to the right (from -80/-110 to -60/-90 and moved right) */}
-                      <div className="absolute w-[160px] md:w-[238px] h-[16px] md:h-6 bottom-[-60px] md:bottom-[-90px] left-[60%] transform -translate-x-1/2 bg-[#05706733] rounded-[80px/8px] md:rounded-[119px/12px] blur-[10px] md:blur-[14.5px]" />
-                    </div>
-                  </div>
+                  {/* Cat image */}
+                  <img
+                    className="relative w-[250px] md:w-[350px] h-auto animate-float"
+                    alt="Zen Cat Meditation"
+                    src="/Group copy copy.png"
+                  />
+
+                  {/* Shadow below cat */}
+                  <div className="absolute w-[150px] md:w-[200px] h-[12px] md:h-[16px] bottom-[-20px] left-1/2 transform -translate-x-1/2 bg-[#05706733] rounded-[75px/8px] blur-[10px]" />
                 </div>
               </div>
             </div>
