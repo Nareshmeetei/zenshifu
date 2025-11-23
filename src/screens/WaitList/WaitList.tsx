@@ -53,8 +53,8 @@ export const WaitList = (): JSX.Element => {
             <div className="relative flex justify-center">
               <img
                 className="w-full max-w-[600px] md:max-w-[927px] h-auto"
-                alt="Vector"
-                src="/vector.png"
+                alt="Group 12"
+                src="/group-12.png"
               />
 
               <div className="absolute w-full max-w-[640px] md:max-w-[983px] h-auto top-[15%] md:top-[141px] left-1/2 transform -translate-x-1/2">
