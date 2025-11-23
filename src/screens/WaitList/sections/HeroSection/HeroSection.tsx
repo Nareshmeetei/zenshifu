@@ -193,7 +193,7 @@ export const HeroSection = (): JSX.Element => {
                 )}
               </h1>
               <p className="font-['Sora',Helvetica] font-normal text-[#5e5e5e] text-base md:text-lg text-center leading-6 max-w-[797px] transition-all duration-1000 ease-out delay-200">
-              The smartest, chat-first AI assistant to build and run your online store effortlessly. Built for SMBs to launch, sell, and manage easier and outbuild ordinary.
+              Chat-first AI assistant to build and run your online store effortlessly. Built for small and medium businesses to launch, sell, and manage easier and outbuild ordinary.
               </p>
             </div>
 
